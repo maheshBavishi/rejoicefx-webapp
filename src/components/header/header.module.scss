@@ -1,0 +1,281 @@
+@import "../../scss/mixins/index.scss";
+
+.header {
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  padding: 10px 0;
+
+  .headerAlignment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      position: relative;
+      width: 200px;
+      cursor: pointer;
+      height: 66px;
+
+      @include breakpoint("sm-max") {
+        width: 120px;
+        height: 30px;
+      }
+    }
+
+    .buttonDesign {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      position: relative;
+
+      .contactBtn {
+        @include breakpoint("md-max") {
+          display: none;
+        }
+      }
+
+      .menuWrapper {
+        position: relative;
+
+        button {
+          padding: 10px 12px !important;
+        }
+      }
+
+      .menuDropdown {
+        position: absolute;
+        top: 110%;
+        right: 0;
+        background: #ffffff;
+        border: 1px solid #e5e8ff;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        display: flex;
+        flex-direction: column;
+        min-width: 180px;
+        padding: 4px 0;
+        z-index: 999;
+        animation: dropdownFade 0.18s ease-out both;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: -6px;
+          right: 18px;
+          width: 12px;
+          height: 12px;
+          border-top: 1px solid #e5e8ff;
+          border-left: 1px solid #e5e8ff;
+          transform: rotate(45deg);
+        }
+
+        button {
+          padding: 10px 18px;
+          background: transparent;
+          border: none;
+          text-align: left;
+          cursor: pointer;
+          font-size: 14px;
+          color: #0b0b14;
+          transition: background 0.25s ease, color 0.25s ease;
+          width: 100%;
+
+          &:hover {
+            background: linear-gradient(90deg, #0048ff 0%, #0070f3 100%);
+            border: 1px solid #0048ff;
+            border-radius: 10px;
+            color: #ffffff;
+          }
+        }
+      }
+
+      svg {
+        transition: 0.3s ease-in-out;
+
+        path {
+          transition: 0.3s ease-in-out;
+        }
+      }
+
+      button {
+        &:hover {
+          svg {
+            path {
+              fill: #014eff;
+              transition: 0.3s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+
+    .userIconWrapper {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .downIcon {
+      width: 16px;
+      height: 16px;
+    }
+
+    .userIcon {
+      width: 24px;
+      height: 24px;
+    }
+
+    .mobileMenu {
+      display: none;
+
+      @include breakpoint("md-max") {
+        display: block;
+      }
+
+      svg {
+        width: 20px;
+        height: 20px;
+
+        path {
+          fill: #014eff;
+        }
+      }
+    }
+
+    .menuAlignment {
+      display: flex;
+      align-items: center;
+
+      @include breakpoint("md-max") {
+        display: none;
+      }
+    }
+  }
+}
+
+// ── Nav trigger item ─────────────────────────────────────────────────────────
+.relativeHeader {
+  position: relative;
+}
+
+.menu {
+  padding: 8px 20px;
+  color: #0f0f1a;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  line-height: normal;
+  user-select: none;
+
+  .chevronWrapper {
+    display: flex;
+    align-items: center;
+    color: inherit;
+  }
+
+  &:hover,
+  &.menuActive {
+    background: #e6edff;
+    color: #014eff;
+  }
+}
+
+// ── Full-width dropdown panel ─────────────────────────────────────────────────
+.submenubox {
+  position: fixed;
+  top: 86px;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 99;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  border-top: 1px solid #f0f0f8;
+
+  .grid {
+    padding: 60px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+
+    .boxLine {
+      border-radius: 14px;
+      border: 1.2px solid var(--foundation-white-normal-hover, #e6e6e6);
+      padding: 30px;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-decoration: none;
+
+      &:hover {
+        border: 1.2px solid #014eff;
+        box-shadow: 0 6px 24px rgba(1, 78, 255, 0.1);
+      }
+
+      &:hover .solution svg {
+        transform: translateX(6px);
+      }
+
+      h3 {
+        color: var(--Foundation-Blue-Dark, #0b0b14);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        margin: 0 0 10px 0;
+        line-height: normal;
+        letter-spacing: -0.22px;
+      }
+
+      p {
+        color: var(--foundation-white-dark-active, #737373);
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        margin: 0 0 20px 0;
+        line-height: 24px;
+      }
+
+      .solution {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        svg {
+          transition: 0.3s ease-in-out;
+        }
+
+        span {
+          display: block;
+          color: var(--Foundation-Blue-Normal, #014eff);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}
+
+// ── User profile dropdown ─────────────────────────────────────────────────────
+@keyframes dropdownFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

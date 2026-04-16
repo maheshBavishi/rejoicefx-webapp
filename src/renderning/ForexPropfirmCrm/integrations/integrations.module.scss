@@ -1,0 +1,73 @@
+@import '../../../scss/mixins/index.scss';
+
+
+.integrations {
+    padding: 100px 0;
+
+    @include breakpoint("sm-max") {
+        padding: 60px 0;
+    }
+
+    .centerAlignment {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0 16px 0;
+    }
+
+    h2 {
+        @include heading1;
+        color: #0B0B14;
+        text-align: center;
+        margin: 0 0 60px 0;
+
+        @include breakpoint("sm-max") {
+            margin: 0 0 40px 0;
+        }
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+
+        @include breakpoint("md-max") {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include breakpoint("sm-max") {
+            grid-template-columns: 1fr;
+        }
+
+
+        .items {
+            border-radius: 22px;
+            border: 1px solid var(--foundation-blue-light-active, #b0c8ff);
+            background: hsla(0, 0%, 90%, 0.2);
+            padding: 24px;
+
+            @include breakpoint("sm-max") {
+                padding: 20px;
+                border-radius: 12px;
+            }
+
+            img {
+                display: block;
+                width: 60px;
+            }
+
+            h3 {
+                color: var(--Foundation-Blue-Normal, #0f0f1a);
+                font-size: 20px;
+                margin: 16px 0 0 0;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 30px;
+
+                @include breakpoint("sm-max") {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
