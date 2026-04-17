@@ -32,12 +32,12 @@ const menuItems = [
       {
         title: "Copy Trading",
         description: "Enable clients to copy expert traders' strategies and grow their portfolios.",
-        redirectLink: "/forex-crm",
+        redirectLink: "/copy-trading-platform",
       },
       {
         title: "MAM/PAMM Social Trading",
         description: "Multi-account management and social trading solutions for fund managers.",
-        redirectLink: "/forex-crm",
+        redirectLink: "/mam-pamm-social-trading",
       },
     ],
   },
@@ -79,11 +79,6 @@ const menuItems = [
         description: "Learn about RejoiceFX, our mission, vision, and the team behind it all.",
         redirectLink: "/about-us",
       },
-      {
-        title: "Career",
-        description: "Join our growing team and build the future of Forex technology with us.",
-        redirectLink: "/career",
-      },
     ],
   },
   {
@@ -92,17 +87,17 @@ const menuItems = [
       {
         title: "Blog",
         description: "Insights, tutorials, and the latest trends from the Forex industry experts.",
-        redirectLink: "/blog",
+        redirectLink: "/",
       },
       {
         title: "News",
         description: "Stay updated with the latest news, product releases, and market updates.",
-        redirectLink: "/news",
+        redirectLink: "/",
       },
       {
         title: "Case Studies",
         description: "Real-world success stories and business outcomes powered by RejoiceFX.",
-        redirectLink: "/case-studies",
+        redirectLink: "/",
       },
     ],
   },
@@ -283,55 +278,6 @@ export default function Header() {
 
             {/* Right Buttons */}
             <div className={styles.buttonDesign}>
-              {isUserLoggedIn ? (
-                <div className={styles.menuWrapper} ref={menuRef}>
-                  <Button
-                    btnStyle={true}
-                    text={
-                      <div className={styles.userIconWrapper}>
-                        <UserCircle className={styles.userIcon} />
-                        {user?.name?.slice(0, 8).length > 8 ? "..." : user?.name}
-                        <ChevronDown className={styles.downIcon} />
-                      </div>
-                    }
-                    onClick={() => setShowMenu((prev) => !prev)}
-                  />
-                  {showMenu && (
-                    <div className={styles.menuDropdown}>
-                      <button
-                        onClick={() => {
-                          setShowMenu(false);
-                          router.push(`/profile/${user?._id}`);
-                        }}
-                      >
-                        Profile
-                      </button>
-                      <button
-                        onClick={() => {
-                          setShowMenu(false);
-                          router.push(`/payment-history/${user?._id}`);
-                        }}
-                      >
-                        Payment History
-                      </button>
-                      <button
-                        onClick={() => {
-                          localStorage.removeItem("user");
-                          localStorage.removeItem("isLogin");
-                          localStorage.removeItem("token");
-                          router.push("/");
-                          setIsUserLoggedIn(false);
-                          setShowMenu(false);
-                        }}
-                      >
-                        Logout
-                      </button>
-                    </div>
-                  )}
-                </div>
-              ) : (
-                <Button text="Login" onClick={() => setShowLogin(true)} />
-              )}
               <div className={styles.contactBtn}>
                 <Link href="/contact-us">
                   <Button text="Contact Us" icon={<RightLgArrow />} />

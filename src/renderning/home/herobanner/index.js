@@ -106,11 +106,11 @@ export default function Herobanner() {
           </div>
         </div>
       </div>
-      <div className={styles.bannerCenterAlignment}>
+      {/* <div className={styles.bannerCenterAlignment}>
         <div className={styles.box}>
           <Image className={animateClass} src={slides[activeSlide].image} layout="fill" />
         </div>
-      </div>
+      </div> */}
     </>
   )
 }

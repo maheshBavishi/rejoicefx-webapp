@@ -9,12 +9,119 @@
 
     .grid {
         display: grid;
-        grid-template-columns: 500px 1fr;
-        gap: 100px;
+        grid-template-columns: 550px 1fr;
+        gap: 0;
+        background-color: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 20px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, .05);
+
 
         @include breakpoint("md-max") {
             grid-template-columns: 1fr;
             gap: 40px;
+        }
+
+        .griditems:last-child {
+            padding: 60px 40px;
+        }
+
+        .griditems:first-child {
+            background: var(--Foundation-Blue-Normal, #014EFF);
+            border-radius: 20px 0 0 20px;
+            padding: 50px;
+
+            @include breakpoint("sm-max") {
+                padding: 30px;
+                border-radius: 20px 20px 0 0;
+            }
+
+            .contactInfoWrapper {
+                h2 {
+                    color: #fff;
+                    font-size: 32px;
+                    font-weight: 700;
+                    margin: 0 0 40px 0;
+
+                    @include breakpoint("sm-max") {
+                        font-size: 24px;
+                        margin: 0 0 30px 0;
+                    }
+                }
+
+                .infoBlock {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 16px;
+                    margin-bottom: 30px;
+
+                    .infoIcon {
+                        width: 24px;
+                        height: 24px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #fff;
+                        flex-shrink: 0;
+                        margin-top: 4px;
+                    }
+
+                    .infoContent {
+                        span {
+                            display: block;
+                            color: rgba(255, 255, 255, 0.8);
+                            font-size: 16px;
+                            margin-bottom: 8px;
+                        }
+
+                        h3 {
+                            color: #fff;
+                            font-size: 20px;
+                            font-weight: 600;
+                            margin-bottom: 8px;
+
+                            @include breakpoint("sm-max") {
+                                font-size: 18px;
+                            }
+                        }
+
+                        p {
+                            color: rgba(255, 255, 255, 0.9);
+                            font-size: 14px;
+                            line-height: 1.5;
+                        }
+                    }
+                }
+
+                .socialIcons {
+                    display: flex;
+                    gap: 12px;
+                    margin-top: 40px;
+
+                    a {
+                        width: 44px;
+                        height: 44px;
+                        border-radius: 50%;
+                        background: rgba(255, 255, 255, 0.1);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #fff;
+                        transition: all 0.3s ease;
+                        border: 1px solid rgba(255, 255, 255, 0.1);
+
+                        &:hover {
+                            background: rgba(255, 255, 255, 0.2);
+                            transform: translateY(-2px);
+                        }
+
+                        svg {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
         }
 
         .firstButton {
@@ -44,7 +151,7 @@
                 padding: 0 0 30px 0;
             }
 
-        
+
 
             .input:last-child {
                 grid-column: span 2;
@@ -66,6 +173,7 @@
                 padding: 0 0 8px 0;
                 display: flex;
                 align-items: center;
+
                 span {
                     color: red;
                     font-size: 12px;

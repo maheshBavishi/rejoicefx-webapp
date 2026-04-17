@@ -1,0 +1,51 @@
+@import '../../../scss/mixins/index.scss';
+
+.slidersection {
+    padding: 100px 0 0 0;
+
+    h2 {
+        color: #0B0B14;
+        @include heading1;
+        text-align: center;
+        margin: 0 0 60px 0;
+    }
+
+    .sliderwrapper {
+        overflow: hidden;
+        width: 100%;
+        mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+
+        .marqueeTrack {
+            display: flex;
+            gap: 100px;
+            width: max-content;
+            padding: 20px 0;
+
+            @include breakpoint("sm-max") {
+                gap: 60px;
+            }
+
+            img {
+                display: block;
+                max-width: 160px;
+                height: 50px;
+                object-fit: contain;
+                filter: grayscale(1);
+                opacity: 0.6;
+                transition: all 0.3s ease;
+                cursor: pointer;
+
+                &:hover {
+                    filter: grayscale(0);
+                    opacity: 1;
+                    transform: scale(1.1);
+                }
+
+                @include breakpoint("sm-max") {
+                    max-width: 120px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}

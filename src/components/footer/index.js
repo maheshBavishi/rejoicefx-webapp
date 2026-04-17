@@ -96,22 +96,25 @@ export default function Footer() {
               </div>
             </div>
             <div className={styles.footerGridItems}>
-              <div className={styles.subtitle}>
-                <h3>Links</h3>
-              </div>
               <div className={styles.menuCol}>
                 <div>
-                  <Link href="/forex-crm">Forex CRM</Link>
-                  <Link href="/mauritius-forex-license">Mauritius Forex License</Link>
-                  <Link href="/vincent-forex-license">St. Vincent Forex License</Link>
-                  <Link href="/algo-bot">Algo Bot & Strategies</Link>
+                  <div className={styles.subtitle}>
+                    <h3>Products</h3>
+                  </div>
+                  <Link href="/forex-crm">Forex Broker CRM</Link>
+                  <Link href="/forex-prop-firm-crm">Forex Prop Firm CRM</Link>
+                  <Link href="/copy-trading-platform">Copy Trading</Link>
+                  <Link href="/mam-pamm-social-trading">MAM/PAMM Social Trading</Link>
                 </div>
                 <div>
-                  <Link href="/strategies">Strategies</Link>
-                  <Link href="/strategies">AI/ML Development</Link>
-                  <Link href="/mobile-web-development">Web and Mobile Development</Link>
-                  <Link href="/contact-us">Contact Us</Link>
-
+                  <div className={styles.subtitle}>
+                    <h3>Services</h3>
+                  </div>
+                  <Link href="/">Forex Broker Setup</Link>
+                  <Link href="/">MT4/MT5 Setup & Training</Link>
+                  <Link href="/">RMS</Link>
+                  <Link href="/">Liquidity Provider's Setup</Link>
+                  <Link href="/ai-development">AI/ML Services</Link>
                 </div>
               </div>
             </div>
