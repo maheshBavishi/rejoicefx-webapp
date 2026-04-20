@@ -6,6 +6,7 @@ import React, { useEffect } from 'react'
 import Slidersection from './slidersection'
 import OurIntegration from './ourIntegration'
 import Product from './product'
+import OurClients from './ourClients'
 export default function Homepage() {
   useEffect(() => {
     window.scrollTo({
@@ -23,6 +24,7 @@ export default function Homepage() {
       <Product />
       <Calculator />
       <OurIntegration />
+      <OurClients />
     </div>
   )
 }

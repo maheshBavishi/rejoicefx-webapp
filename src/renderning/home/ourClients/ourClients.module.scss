@@ -1,0 +1,175 @@
+@import '../../../scss/mixins/index.scss';
+
+.ourClientsAlignment {
+    padding: 0 0 100px 0;
+
+
+    @include breakpoint("md-max") {
+        padding: 0 0 60px 0;
+    }
+
+    .buttonCenteralignment {
+        display: flex;
+        justify-content: center;
+    }
+
+    .text {
+        padding: 20px 0 60px 0;
+
+        h2 {
+            margin: 0 0 10px 0;
+            text-align: center;
+            @include heading1;
+            color: #0B0B14;
+        }
+
+        p {
+            color: #737373;
+            text-align: center;
+            font-size: 18px;
+            text-align: center;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+
+            @include breakpoint("sm-max") {
+                @include font14;
+            }
+        }
+    }
+
+    .sliderWrapper {
+        position: relative;
+        margin-top: 10px;
+
+        :global {
+            .slick-list {
+                margin: 0 -12px;
+            }
+
+            .slick-track {
+                display: flex;
+            }
+
+            .slick-slide {
+                height: auto;
+
+                &>div {
+                    height: 100%;
+                    padding: 0 12px;
+                }
+            }
+        }
+
+        .slideItemWrapper {
+            height: 100%;
+            outline: none;
+        }
+
+        .card {
+            border: 1px solid rgba(0, 0, 0, 0.10);
+            background: rgba(255, 255, 255, 0.50);
+            box-shadow: 0 0 34.4px 0 rgba(0, 0, 0, 0.04);
+            border-radius: 16px;
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            min-height: 280px;
+
+            .cardHeader {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-bottom: 14px;
+
+                .stars {
+                    display: flex;
+                    gap: 6px;
+
+                    svg {
+                        width: 18px;
+                        height: 17px;
+                    }
+                }
+
+                .quote {
+                    svg {
+                        width: 28px;
+                        height: 24px;
+                        color: #1C64F2;
+                    }
+                }
+            }
+
+            .cardBody {
+                flex-grow: 1;
+
+                p {
+                    color: #6B7280;
+                    font-size: 16px;
+                    line-height: 26px;
+                    margin: 0;
+                    text-align: left;
+                    font-weight: 500;
+                }
+            }
+
+            .divider {
+                width: 100%;
+                height: 1px;
+                background-color: #F3F4F6;
+                margin: 14px 0 14px 0;
+            }
+
+            .cardFooter {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+
+                svg {
+                    width: 40px;
+                    height: 40px;
+                }
+
+                span {
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: #111827;
+                }
+            }
+        }
+
+        .sliderArrows {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            margin-top: 40px;
+
+            .arrowBtn {
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                border: 1px solid #E5E7EB;
+                background: #FFFFFF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    background: #F9FAFB;
+                    border-color: #D1D5DB;
+                }
+
+                svg {
+                    width: 18px;
+                    height: 18px;
+                    color: #4B5563;
+                }
+            }
+        }
+    }
+}
