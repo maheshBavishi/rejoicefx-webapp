@@ -5,6 +5,7 @@ import Calculator from './calculator'
 import React, { useEffect } from 'react'
 import Slidersection from './slidersection'
 import OurIntegration from './ourIntegration'
+import Product from './product'
 export default function Homepage() {
   useEffect(() => {
     window.scrollTo({
@@ -19,6 +20,7 @@ export default function Homepage() {
       <Slidersection />
       <Aboutus />
       <Service />
+      <Product />
       <Calculator />
       <OurIntegration />
     </div>

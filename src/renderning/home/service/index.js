@@ -3,10 +3,47 @@ import styles from './service.module.scss';
 const Image1 = '/assets/images/img1.png';
 const Image2 = '/assets/images/img2.png';
 const Image3 = '/assets/images/img3.png';
+const Image4 = '/assets/images/service.png';
+const LiquidityImage = '/assets/images/Liquidity.png';
+const AiMlImage = '/assets/images/ai-ml.png';
+const Image5 = '/assets/images/algo.png';
 import CommonButton from '@/components/commonButton';
 import Image from 'next/image';
 import Link from 'next/link';
 import Atropos from 'atropos/react';
+
+const servicesData = [
+  {
+    title: "Forex Broker Setup",
+    description: "End-to-end Forex broker setup services to launch your brokerage swiftly.",
+    redirectLink: "/forex-broker-setup",
+    imgSrc: Image1,
+  },
+  {
+    title: "MT4/MT5 Setup & Training",
+    description: "Professional MetaTrader 4 & 5 configuration, deployment, and staff training.",
+    redirectLink: "/mt4-mt5-setup-training",
+    imgSrc: Image2,
+  },
+  {
+    title: "RMS",
+    description: "Risk Management System to monitor and control trading exposure in real-time.",
+    redirectLink: "/rms-risk-management",
+    imgSrc: Image3,
+  },
+  {
+    title: "Liquidity Provider's Setup",
+    description: "Connect to top-tier liquidity providers for the best spreads and execution.",
+    redirectLink: "/liquidity-provider-setup",
+    imgSrc: LiquidityImage,
+  },
+  {
+    title: "AI/ML Services",
+    description: "Cutting-edge artificial intelligence and machine learning solutions for trading.",
+    redirectLink: "/ai-development",
+    imgSrc: AiMlImage,
+  },
+];
 
 export default function Service() {
   return (
@@ -19,56 +56,24 @@ export default function Service() {
           <div className={styles.text}>
             <h2>Services Tailored for Forex Success</h2>
             <p>
-              Unlock comprehensive solutions to enhance your Forex brokerage with cutting-edge technology 
+              Unlock comprehensive solutions to enhance your Forex brokerage with cutting-edge technology
               and expert support.
             </p>
           </div>
           <div className={styles.grid}>
-          <Atropos shadow={0}>
-            <div className={styles.griditems}>
-              <Link href="/forex-crm">
-              <button>01</button>
-              <h3>Forex CRM
-              </h3>
-              <p>
-                Manage clients and streamline operations with a CRM designed specifically 
-                for Forex businesses.
-              </p>
-              <div className={styles.img}>
-                <Image src={Image1} layout="fill" />
+            {servicesData.map((service, index) => (
+
+              <div className={styles.griditems}>
+                <Link href={service.redirectLink}>
+                  <button>{`0${index + 1}`}</button>
+                  <h3>{service.title}</h3>
+                  <p>{service.description}</p>
+                  <div className={styles.img}>
+                    <Image src={service.imgSrc} layout="fill" />
+                  </div>
+                </Link>
               </div>
-              </Link>
-            </div>
-            </Atropos>
-            <Atropos shadow={0}>
-            <div className={styles.griditems}>
-            <Link href="/vincent-forex-license">
-              <button>02</button>
-              <h3>Forex Licenses
-              </h3>
-              <p>
-              Obtain your Forex broker license seamlessly in jurisdictions like Mauritius and St. Lucia with our expert guidance.
-              </p>
-              <div className={styles.img}>
-                <Image src={Image2} layout="fill" />
-              </div>
-              </Link>
-            </div>
-            </Atropos>
-            <Atropos shadow={0}>
-            <div className={styles.griditems}>
-            <Link href="/algo-bot">
-              <button>03</button>
-              <h3>Forex Algo Bot and Strategies</h3>
-              <p>
-              Automate your trading strategies using intelligent bots that execute trades based on real-time market analysis.
-              </p>
-              <div className={styles.img}>
-                <Image src={Image3} layout="fill" />
-              </div>
-              </Link>
-            </div>
-            </Atropos>
+            ))}
           </div>
         </div>
       </div>

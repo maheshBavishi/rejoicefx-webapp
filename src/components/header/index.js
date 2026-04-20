@@ -47,22 +47,22 @@ const menuItems = [
       {
         title: "Forex Broker Setup",
         description: "End-to-end Forex broker setup services to launch your brokerage swiftly.",
-        redirectLink: "/forex-crm",
+        redirectLink: "/forex-broker-setup",
       },
       {
         title: "MT4/MT5 Setup & Training",
         description: "Professional MetaTrader 4 & 5 configuration, deployment, and staff training.",
-        redirectLink: "/forex-crm",
+        redirectLink: "/mt4-mt5-setup-training",
       },
       {
         title: "RMS",
         description: "Risk Management System to monitor and control trading exposure in real-time.",
-        redirectLink: "/forex-crm",
+        redirectLink: "/rms-risk-management",
       },
       {
         title: "Liquidity Provider's Setup",
         description: "Connect to top-tier liquidity providers for the best spreads and execution.",
-        redirectLink: "/forex-crm",
+        redirectLink: "/liquidity-provider-setup",
       },
       {
         title: "AI/ML Services",

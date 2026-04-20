@@ -2,11 +2,13 @@ import React from 'react'
 import AboutUsBanner from './aboutUsBanner'
 import Aboutus from '../home/aboutus'
 import OurIntegration from '../home/ourIntegration'
+import Slidersection from '../home/slidersection'
 
 export default function AboutUsPage() {
     return (
         <div>
             <AboutUsBanner />
+            <Slidersection />
             <Aboutus />
             <OurIntegration />
         </div>

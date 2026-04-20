@@ -7,11 +7,13 @@ import TrustedPartners from '../mauritiusForexLicense/explicit/trustedPartners'
 import Overview from '../mauritiusForexLicense/explicit/overview'
 import RequirementsSectionSt from './RequirementsSectionSt'
 import VincentOverview from './vincentOverview'
+import Slidersection from '../home/slidersection'
 
 export default function VincentforexLicense() {
   return (
     <div>
       <VincentforexLicenseBanner />
+      <Slidersection />
       <FormationSection />
       <VincentforexLicenseProcess />
       <RequirementsSectionSt />

@@ -6,16 +6,18 @@ import SolutionSection from './solutionSection'
 import BoostBusiness from './boostBusiness'
 import WorkProcess from './workProcess'
 import WhatisDevelopment from './whatisDevelopment'
+import Slidersection from '../home/slidersection'
 
 export default function AiDevelopment() {
   return (
     <div>
-      <AiDevelopmentBanner/>
-      <TransformSection/>
-      <SolutionSection/>
-      <BoostBusiness/>
-      <WorkProcess/>
-      <WhatisDevelopment/>
+      <AiDevelopmentBanner />
+      <Slidersection />
+      <TransformSection />
+      <SolutionSection />
+      <BoostBusiness />
+      <WorkProcess />
+      <WhatisDevelopment />
     </div>
   )
 }

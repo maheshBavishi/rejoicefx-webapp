@@ -8,10 +8,12 @@ import WhoIsThis from './whoIsThis';
 import HowitWorkCrm from './howitWorkCrm';
 import Integrations from './integrations';
 import FaqSectionCrm from './faqCrm';
+import Slidersection from '../home/slidersection';
 export default function ForexPropfirmCrm() {
   return (
     <div>
       <ForexPropfirmCrmHerobanner />
+      <Slidersection />
       <KeyFeatures />
       <Advantages />
       <WhyChooseRejoicefx />

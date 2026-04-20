@@ -5,14 +5,16 @@ import DigitalSolutions from './digitalSolutions';
 import SolutionsForDevice from './solutionsForDevice';
 import MobileAndWeb from './mobileAndWeb';
 import DigitalDevelopment from './digitalDevelopment';
+import Slidersection from '../home/slidersection';
 export default function WebDevelopment() {
   return (
     <div>
-      <WebDevelopmentBanner/>
-      <DigitalSolutions/>
-      <SolutionsForDevice/>
-      <MobileAndWeb/>
-      <DigitalDevelopment/>
+      <WebDevelopmentBanner />
+      <Slidersection />
+      <DigitalSolutions />
+      <SolutionsForDevice />
+      <MobileAndWeb />
+      <DigitalDevelopment />
     </div>
   )
 }

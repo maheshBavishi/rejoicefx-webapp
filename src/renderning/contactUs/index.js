@@ -1,3 +1,4 @@
+import Slidersection from '../home/slidersection'
 import ContactUsBanner from './contactUsBanner'
 import Helpsection from './helpsection'
 import React , {useEffect} from 'react'
@@ -12,6 +13,7 @@ export default function ContactUs() {
   return (
     <div>
       <ContactUsBanner/>
+      <Slidersection />
       <Helpsection/>
     </div>
   )

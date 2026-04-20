@@ -7,18 +7,20 @@ import Unmatchedfrontend from './unmatchedfrontend'
 import PheasanTechForex from './pheasanTechForex'
 import BestMarketingTool from './bestMarketingTool'
 import FaqSection from './faqSection'
+import Slidersection from '../home/slidersection'
 
 export default function ForexCrm() {
   return (
     <div>
-      <ForexCrmBanner/>
-      <WorksLike/>
-      <BuildingaBrokerage/>
-      <CrmSystem/>
-      <Unmatchedfrontend/>
-      <PheasanTechForex/>
-      <BestMarketingTool/>
-      <FaqSection/>
+      <ForexCrmBanner />
+      <Slidersection />
+      <WorksLike />
+      <BuildingaBrokerage />
+      <CrmSystem />
+      <Unmatchedfrontend />
+      <PheasanTechForex />
+      <BestMarketingTool />
+      <FaqSection />
     </div>
   )
 }

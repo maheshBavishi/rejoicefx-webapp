@@ -7,11 +7,13 @@ import CopyTradingWho from './copyTradingwho'
 import CopyTradingHowitWork from './copyTradingHowitWork'
 import Integrations from '../ForexPropfirmCrm/integrations'
 import CopyTradingFaq from './copyTradingFaq'
+import Slidersection from '../home/slidersection'
 
 export default function CopyTradingPlatform() {
     return (
         <div>
             <CopyTradingPlatformHero />
+            <Slidersection />
             <CopyTradingKeyfeature />
             <CopyTradingAdvantages />
             <CopyTradingWhyChoose />

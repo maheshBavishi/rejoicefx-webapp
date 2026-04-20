@@ -1,0 +1,109 @@
+@import '../../../scss/mixins/index.scss';
+
+.liquidityProviders {
+    padding: 100px 0;
+    background-color: #f8fafc;
+
+    @include breakpoint("sm-max") {
+        padding: 60px 0;
+    }
+
+    .centerAlignment {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 24px;
+    }
+
+    .title {
+        text-align: center;
+        margin-bottom: 60px;
+
+        h2 {
+            @include heading1;
+            color: #0B0B14;
+            margin-bottom: 16px;
+        }
+
+        p {
+            color: #595959;
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+
+            @include breakpoint("sm-max") {
+                @include font14;
+            }
+        }
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 30px;
+
+        @include breakpoint("md-max") {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint("sm-max") {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+    }
+
+    .card {
+        border-radius: 12px;
+        border: 1px solid var(--foundation-blue-light-active, #b0c8ff);
+        background: hsla(0, 0%, 90%, 0.2);
+        padding: 20px;
+        transition: .3s ease-in-out;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            border-color: #cbd5e1;
+
+            .providerImage {
+                filter: grayscale(0%);
+                opacity: 1;
+            }
+
+            .fallbackLogo {
+                color: #014eff;
+            }
+        }
+    }
+
+    .imageWrapper {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .providerImage {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        filter: grayscale(100%);
+        opacity: 0.6;
+        transition: all 0.3s ease;
+    }
+
+    .fallbackLogo {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        font-size: 1.6rem;
+        font-weight: 800;
+        color: #475569;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        transition: color 0.3s ease;
+    }
+}

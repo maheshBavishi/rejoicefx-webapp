@@ -1,0 +1,57 @@
+@import '../../../scss/mixins/index.scss';
+
+.whyChooseSetupTraining {
+    padding: 0 0 120px 0;
+
+    @include breakpoint("sm-max") {
+        padding: 0 0 60px 0;
+    }
+
+    h2 {
+        @include heading1;
+        color: #0f0f1a;
+        text-align: center;
+        margin: 0 0 16px 0;
+    }
+
+    .centerAlignment {
+        display: flex;
+        justify-content: center;
+        padding: 0 0 16px 0;
+    }
+
+    .twoCol {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+        padding: 60px 0 0 0;
+
+        @include breakpoint("md-max") {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint("sm-max") {
+            grid-template-columns: 1fr;
+            padding: 20px 0 0 0;
+        }
+
+        .items {
+            display: grid;
+            grid-template-columns: 24px 1fr;
+            gap: 24px;
+
+            p {
+                display: block;
+                color: var(--foundation-blue-light-hover, #0f0f1a);
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 30px;
+
+                @include breakpoint("sm-max") {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
