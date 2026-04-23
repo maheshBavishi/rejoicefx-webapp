@@ -14,14 +14,13 @@
 
     .logo {
       position: relative;
-      width: 200px;
-      cursor: pointer;
-      height: 66px;
 
-      @include breakpoint("sm-max") {
-        width: 120px;
-        height: 30px;
+      img {
+        height: 60px;
+        display: block;
       }
+
+
     }
 
     .buttonDesign {
@@ -218,7 +217,7 @@
       text-decoration: none;
 
       &:hover {
-        border: 1.2px solid #014eff;
+        border: 1.2px solid #8A2BE2;
         box-shadow: 0 6px 24px rgba(1, 78, 255, 0.1);
       }
 

@@ -53,7 +53,7 @@ export default function CrmSystem() {
                                     </p>
                                 </div>
                                 <div className={styles.allIconalignment}>
-                                <div className={styles.iconGrid}>
+                                    <div className={styles.iconGrid}>
                                         <SqureIconWhite />
                                         <span>Front-end developer</span>
                                     </div>
@@ -125,60 +125,60 @@ export default function CrmSystem() {
                         <div className={styles.fourCol}>
                             <div className={styles.fourColItems}>
                                 <p>
-                                Developers
+                                    Developers
                                 </p>
                                 <span>Average salary for a software developer is around $100,000 per year</span>
                             </div>
                             <div className={styles.fourColItems}>
                                 <p>
-                                Servers and hosting
+                                    Servers and hosting
                                 </p>
                                 <span>
-                                Cloud hosting can cost between $10,000 to $50,000 annually, depending on usage requirements
+                                    Cloud hosting can cost between $10,000 to $50,000 annually, depending on usage requirements
                                 </span>
                             </div>
                             <div className={styles.fourColItems}>
                                 <p>
-                                Development time
+                                    Development time
                                 </p>
                                 <span>
-                                Building a CRM system from scratch can take 12-24 months
+                                    Building a CRM system from scratch can take 12-24 months
                                 </span>
                             </div>
                             <div className={styles.fourColItems}>
                                 <p>
-                                Bugs and fixes
+                                    Bugs and fixes
                                 </p>
                                 <span>
-                                Unanticipated bugs and fixes can add 20-30% to the total development cost
+                                    Unanticipated bugs and fixes can add 20-30% to the total development cost
                                 </span>
                             </div>
                         </div>
                         <div className={styles.teamSection}>
                             <h3>
-                            Our team works tirelessly to improve RejoiceFX
+                                Our team works tirelessly to improve GENXEL
                             </h3>
                             <div className={styles.secAlignment}>
                                 <div>
                                     <p>
-                                    70+
+                                        70+
                                     </p>
                                     <span>
-                                    Engineers working full-time
+                                        Engineers working full-time
                                     </span>
                                 </div>
                                 <div>
                                     <p>
-                                    30+
+                                        30+
                                     </p>
                                     <span>Continuous Development</span>
                                 </div>
                                 <div>
                                     <p>
-                                    160+
+                                        160+
                                     </p>
                                     <span>
-                                    Clients using <br/> RejoiceFX
+                                        Clients using <br /> GENXEL
                                     </span>
                                 </div>
                             </div>

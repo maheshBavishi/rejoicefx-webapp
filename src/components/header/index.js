@@ -76,7 +76,7 @@ const menuItems = [
     submenu: [
       {
         title: "About Us",
-        description: "Learn about RejoiceFX, our mission, vision, and the team behind it all.",
+        description: "Learn about GENXEL, our mission, vision, and the team behind it all.",
         redirectLink: "/about-us",
       },
     ],
@@ -96,7 +96,7 @@ const menuItems = [
       },
       {
         title: "Case Studies",
-        description: "Real-world success stories and business outcomes powered by RejoiceFX.",
+        description: "Real-world success stories and business outcomes powered by GENXEL.",
         redirectLink: "/",
       },
     ],
@@ -199,7 +199,7 @@ export default function Header() {
             {/* Logo */}
             <div className={styles.logo}>
               <Link href="/">
-                <Image src={Logo} layout="fill" />
+                <img src={Logo} />
               </Link>
             </div>
 

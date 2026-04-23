@@ -17,7 +17,7 @@ export default function StrategiesPlans({ item, index }) {
   const [loading, setLoading] = useState(false);
   const [isBtnLoading, setIsBtnLoading] = useState(false);
   const [showLoginInstructionModal, setShowLoginInstructionModal] = useState(false);
-  const { showLogin, setShowLogin, backToStrategyPlan, setBackToStrategyPlan, /* subscriptionPlanModalOpen, setSubscriptionPlanModalOpen  */} = useAppContext();
+  const { showLogin, setShowLogin, backToStrategyPlan, setBackToStrategyPlan, /* subscriptionPlanModalOpen, setSubscriptionPlanModalOpen  */ } = useAppContext();
   const [formData, setFormData] = useState({
     name: user?.name || "",
     email: user?.email || "",
@@ -32,7 +32,7 @@ export default function StrategiesPlans({ item, index }) {
     }
   }, [user]);
 
- 
+
   const validate = () => {
     const newErrors = {};
     if (!formData?.name) newErrors.name = "Name is required";
@@ -178,7 +178,7 @@ export default function StrategiesPlans({ item, index }) {
         <Modal isOpen={showLoginInstructionModal} onClose={() => setShowLoginInstructionModal(false)} size="small" closeStyle={true}>
           <div className="px-6 py-8 sm:px-8 bg-white rounded-2xl shadow-xl max-w-md mx-auto text-center">
             <div className={styles.logo}>
-              <Image src={Logo} alt="RejoiceFX" width={200} height={50} />
+              <Image src={Logo} alt="GENXEL" width={200} height={50} />
             </div>
 
             <p className="text-sm text-gray-500 mb-6">You need to be logged in before purchasing a strategy plan.</p>

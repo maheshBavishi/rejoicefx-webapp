@@ -16,7 +16,6 @@
     "env": "^0.0.2",
     "flag-icon-css": "^4.1.7",
     "framer-motion": "^12.38.0",
-    "graphql": "^16.13.2",
     "graphql-request": "^7.1.0",
     "intl-tel-input": "^25.3.1",
     "lucide-react": "^0.525.0",

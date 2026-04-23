@@ -16,7 +16,7 @@ export default function TransformSection() {
                     Transform Your Business with our AI & ML Solutions
                 </h2>
                 <p>
-                    RejoiceFX, We are providing advanced AI and ML Solutions as per your business requirements.
+                    GENXEL, We are providing advanced AI and ML Solutions as per your business requirements.
                 </p>
                 <div className={styles.grid}>
                     <div className={styles.griditems}>

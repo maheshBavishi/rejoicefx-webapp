@@ -38,23 +38,23 @@ const RightArrow = () => (
 
 const testimonials = [
     {
-        text: "RejoiceFX helped us streamline our brokerage setup much faster than expected. From CRM to trading infrastructure, everything was handled efficiently. The biggest advantage was having all systems integrated in one place.",
+        text: "GENXEL helped us streamline our brokerage setup much faster than expected. From CRM to trading infrastructure, everything was handled efficiently. The biggest advantage was having all systems integrated in one place.",
         author: "Team, Foreaxa"
     },
     {
-        text: "We significantly improved our client management and internal workflows after implementing RejoiceFX. Their CRM and automation tools brought structure and efficiency to our operations.",
+        text: "We significantly improved our client management and internal workflows after implementing GENXEL. Their CRM and automation tools brought structure and efficiency to our operations.",
         author: "Operations Team, Juno Markets"
     },
     {
-        text: "Before RejoiceFX, managing multiple systems was a challenge. Now everything is centralized, making it easier for our team to operate and scale without technical bottlenecks.",
+        text: "Before GENXEL, managing multiple systems was a challenge. Now everything is centralized, making it easier for our team to operate and scale without technical bottlenecks.",
         author: "Management Team, IncredFX"
     },
     {
-        text: "Setting up and managing a trading infrastructure used to be complex. RejoiceFX simplified the entire process and gave us the flexibility to customize based on our needs.",
+        text: "Setting up and managing a trading infrastructure used to be complex. GENXEL simplified the entire process and gave us the flexibility to customize based on our needs.",
         author: "Technical Team, ExoraPrime"
     },
     {
-        text: "The all-in-one ecosystem provided by RejoiceFX helped us reduce operational overhead. From backend systems to automation, everything works seamlessly together.",
+        text: "The all-in-one ecosystem provided by GENXEL helped us reduce operational overhead. From backend systems to automation, everything works seamlessly together.",
         author: "Operations Team, Auxilium FX"
     }
 ];
@@ -96,7 +96,7 @@ export default function OurClients() {
                 <div className={styles.text}>
                     <h2>What Our Clients Say</h2>
                     <p>
-                        Hear from forex brokers, prop firms, and trading businesses using RejoiceFX to scale faster and operate smarter.
+                        Hear from forex brokers, prop firms, and trading businesses using GENXEL to scale faster and operate smarter.
                     </p>
                 </div>
 

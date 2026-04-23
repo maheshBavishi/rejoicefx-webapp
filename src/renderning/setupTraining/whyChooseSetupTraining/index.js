@@ -18,7 +18,7 @@ export default function WhyChooseSetupTraining() {
                     <CommonButton text="Why Choose Us" />
                 </div>
                 <h2>
-                    Why Choose RejoiceFX for Setup & Training?
+                    Why Choose GENXEL for Setup & Training?
                 </h2>
                 <div className={styles.twoCol}>
                     {features.map((item) => (

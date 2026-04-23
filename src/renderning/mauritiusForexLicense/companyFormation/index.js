@@ -19,7 +19,7 @@ export default function CompanyFormation() {
               <CommonButton text="Mauritius Company Formation" />
               <h3>Start your forex broking business in Mauritius</h3>
               <p>
-                Mauritius offers amazing business experience with affordable capital requirements, fine banking services, payment service provider support, and easy application process for Mauritius forex license. The minimum paid-up capital requirement is MUR 700,000. Mauritius is the best destination for you, get a Mauritius Forex License! With RejoiceFX , you get total support for Mauritius FSC and Mauritius forex company formation process. Contact us if you want to know more
+                Mauritius offers amazing business experience with affordable capital requirements, fine banking services, payment service provider support, and easy application process for Mauritius forex license. The minimum paid-up capital requirement is MUR 700,000. Mauritius is the best destination for you, get a Mauritius Forex License! With GENXEL , you get total support for Mauritius FSC and Mauritius forex company formation process. Contact us if you want to know more
                 about company formation.
               </p>
               <div className={styles.firstButton}>

@@ -3,14 +3,14 @@ import styles from './calculatorBanner.module.scss';
 import CommonButton from '@/components/commonButton';
 export default function CalculatorBanner() {
   return (
-      <div className="container-lg">
-    <div className={styles.calculatorBanner}>
+    <div className="container-lg">
+      <div className={styles.calculatorBanner}>
         <div className={styles.btnCenter}>
-            <CommonButton text="Forex Calculator"/>
+          <CommonButton text="Forex Calculator" />
         </div>
-        <h2>RejoiceFX Calculator</h2>
+        <h2>GENXEL Calculator</h2>
         <p>
-        Discover the cost of setting up a Forex Brokerage Business!
+          Discover the cost of setting up a Forex Brokerage Business!
         </p>
       </div>
     </div>

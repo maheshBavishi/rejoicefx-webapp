@@ -6,10 +6,10 @@ export default function index() {
   return (
     <div>
       <Head>
-        <title>Start Your Forex Brokerage | End-to-End Forex Broker Setup | RejoiceFX</title>
+        <title>Start Your Forex Brokerage | End-to-End Forex Broker Setup | GENXEL</title>
         <meta
           name="description"
-          content="Launch your Forex brokerage with RejoiceFX. We provide complete broker setup including licensing, CRM, MT4/MT5, liquidity, and risk management solutions."
+          content="Launch your Forex brokerage with GENXEL. We provide complete broker setup including licensing, CRM, MT4/MT5, liquidity, and risk management solutions."
         />
         <meta
           name="keywords"

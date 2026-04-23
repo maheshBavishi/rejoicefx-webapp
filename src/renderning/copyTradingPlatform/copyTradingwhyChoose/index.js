@@ -37,9 +37,9 @@ export default function CopyTradingWhyChoose() {
         <div className={styles.whyChooseRejoicefx}>
             <div className='container'>
                 <div className={styles.centerAlignment}>
-                    <CommonButton text="Why Choose RejoiceFX?" />
+                    <CommonButton text="Why Choose GENXEL?" />
                 </div>
-                <h2>Why Choose RejoiceFX?</h2>
+                <h2>Why Choose GENXEL?</h2>
                 <div className={styles.grid}>
                     {reasons.map((reason) => (
                         <div className={styles.card} key={reason.id}>

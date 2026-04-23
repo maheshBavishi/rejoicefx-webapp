@@ -13,7 +13,7 @@ export default function WorkProcess() {
                         Our Work Process
                     </h2>
                     <p>
-                        The systematic approach of RejoiceFX is worth an in-depth exploration, where expertise is combined for results that
+                        The systematic approach of GENXEL is worth an in-depth exploration, where expertise is combined for results that
                         are beyond compare.
                     </p>
                     <div className={styles.grid}>

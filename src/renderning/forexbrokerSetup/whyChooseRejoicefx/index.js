@@ -15,10 +15,10 @@ export default function WhyChooseRejoicefx() {
             <div className={styles.whyChooseRejoicefx}>
                 <div className='container'>
                     <div className={styles.cemteralignment}>
-                        <CommonButton text="Why Choose RejoiceFX?" />
+                        <CommonButton text="Why Choose GENXEL?" />
                     </div>
                     <h2>
-                        Why Choose RejoiceFX?
+                        Why Choose GENXEL?
                     </h2>
                     <div className={styles.twoCol}>
                         {whoInfo.map((item) => (

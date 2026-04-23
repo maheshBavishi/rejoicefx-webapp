@@ -38,9 +38,6 @@ export default function LiquidityProviders() {
                                         e.target.nextSibling.style.display = 'flex';
                                     }}
                                 />
-                                <div className={styles.fallbackLogo}>
-                                    {item.name}
-                                </div>
                             </div>
                         </div>
                     ))}

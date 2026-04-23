@@ -6,10 +6,10 @@ export default function ContactUsBanner() {
         <div className="container-lg">
             <div className={styles.contactUsBanner}>
                 <div className={styles.btnCenter}>
-                    <CommonButton text="Get in Touch with RejoiceFX"/>
+                    <CommonButton text="Get in Touch with GENXEL" />
                 </div>
                 <h2>
-                Reach Out for Any Inquiries or Support
+                    Reach Out for Any Inquiries or Support
                 </h2>
                 <p>Simply fill out the form below, and we’ll get back to you as soon as possible.</p>
             </div>

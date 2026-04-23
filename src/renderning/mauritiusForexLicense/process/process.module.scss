@@ -38,18 +38,18 @@
         gap: 20px;
 
         @include breakpoint("md-max") {
-            grid-template-columns: repeat(2 , 1fr);
+            grid-template-columns: repeat(2, 1fr);
         }
 
         @include breakpoint("sm-max") {
-            grid-template-columns: repeat(1 , 1fr);
+            grid-template-columns: repeat(1, 1fr);
         }
 
 
         .griditems:last-child {
             border-radius: 22px;
             border: 1px solid var(--foundation-blue-light-active, #B0C8FF);
-            background: var(--Foundation-Blue-Normal, #014EFF);
+            background: linear-gradient(137.56deg, #8A2BE2 0%, #3FA9F5 47.95%, #AEEBFF 95.91%);
             padding: 30px;
 
             @include breakpoint("md-max") {
@@ -68,10 +68,11 @@
             span {
                 display: block;
                 color: var(--Foundation-White-Normal, #FFF);
-font-size: 26px;
-font-style: normal;
-font-weight: 600;
-line-height: 32px; /* 100% */
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 32px;
+                /* 100% */
             }
         }
 

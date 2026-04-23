@@ -6,12 +6,12 @@ export default function AboutUsBanner() {
         <div className="container-lg">
             <div className={styles.contactUsBanner}>
                 <div className={styles.btnCenter}>
-                    <CommonButton text="About RejoiceFX" />
+                    <CommonButton text="About GENXEL" />
                 </div>
                 <h2>
-                    About RejoiceFX
+                    About GENXEL
                 </h2>
-                <p>RejoiceFX is a leading provider of innovative financial technology solutions, dedicated to empowering businesses with cutting-edge tools and services. Our platform is designed to streamline operations, enhance efficiency, and drive growth for our clients across various industries.</p>
+                <p>GENXEL is a leading provider of innovative financial technology solutions, dedicated to empowering businesses with cutting-edge tools and services. Our platform is designed to streamline operations, enhance efficiency, and drive growth for our clients across various industries.</p>
             </div>
         </div>
     )

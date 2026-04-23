@@ -6,10 +6,10 @@ export default function index() {
     return (
         <div>
             <Head>
-                <title>Copy Trading Platform | Social Trading Solutions for Forex Brokers | RejoiceFX</title>
+                <title>Copy Trading Platform | Social Trading Solutions for Forex Brokers | GENXEL</title>
                 <meta
                     name="description"
-                    content="Offer seamless copy trading solutions with RejoiceFX. Enable investors to copy expert traders, manage performance, and grow your Forex business with advanced automation."
+                    content="Offer seamless copy trading solutions with GENXEL. Enable investors to copy expert traders, manage performance, and grow your Forex business with advanced automation."
                 />
                 <meta
                     name="keywords"

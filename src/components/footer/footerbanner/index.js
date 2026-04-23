@@ -20,23 +20,23 @@ export default function Footerbanner() {
                             </button>
                         </div>
                         <h2>
-                            Start Trading Smarter with RejoiceFX
+                            Start Trading Smarter with GENXEL
                         </h2>
                         <p>
-                            Ready to elevate your Forex trading or brokerage operations? Whether you're looking to automate your trades, secure a broker license, or streamline client management, Rejoicefx has the tools and expertise to help you succeed. Don’t wait—unlock your
+                            Ready to elevate your Forex trading or brokerage operations? Whether you're looking to automate your trades, secure a broker license, or streamline client management, GENXEL has the tools and expertise to help you succeed. Don’t wait—unlock your
                             trading potential today.
                         </p>
                     </div>
                     <div className={styles.startButton}>
-                    <Atropos>
-                        <Link href="/contact-us">
-                            <button>
-                                Get Started Now
-                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-                                    <path d="M20.9099 11.0647L14.8451 5L13.9361 5.909L19.871 11.8451H3.5V13.1309H19.8736L13.9361 19.067L14.8451 19.976L20.9099 13.9126C21.2904 13.532 21.5 13.0254 21.5 12.488C21.5 11.9506 21.2904 11.444 20.9099 11.066V11.0647Z" fill="#014EFF" />
-                                </svg>
-                            </button>
-                        </Link>
+                        <Atropos>
+                            <Link href="/contact-us">
+                                <button>
+                                    Get Started Now
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                        <path d="M20.9099 11.0647L14.8451 5L13.9361 5.909L19.871 11.8451H3.5V13.1309H19.8736L13.9361 19.067L14.8451 19.976L20.9099 13.9126C21.2904 13.532 21.5 13.0254 21.5 12.488C21.5 11.9506 21.2904 11.444 20.9099 11.066V11.0647Z" fill="#014EFF" />
+                                    </svg>
+                                </button>
+                            </Link>
                         </Atropos>
                     </div>
                 </div>

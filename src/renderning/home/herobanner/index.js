@@ -71,7 +71,7 @@ export default function Herobanner() {
     },
     {
       title: "Trade Better, Smarter, Faster.",
-      description: "Leverage AI-powered tools to automate your trading strategies and maximize returns. Experience faster execution and smarter decision-making with RejoiceFX.",
+      description: "Leverage AI-powered tools to automate your trading strategies and maximize returns. Experience faster execution and smarter decision-making with GENXEL.",
       image: Banner3
     }
   ];

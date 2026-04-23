@@ -6,13 +6,13 @@ export default function AiDevelopmentBanner() {
     <div className='container-lg'>
       <div className={styles.webDevelopmentBanner}>
         <div className={styles.buttonCenter}>
-        <CommonButton text="AI Development"/>
+          <CommonButton text="AI Development" />
         </div>
         <h2>
-        AI/ML Development Services: Empowering Your Business
+          AI/ML Development Services: Empowering Your Business
         </h2>
         <p>
-        Drive innovation and efficiency in your business with expert AI & ML services by RejoiceFX.
+          Drive innovation and efficiency in your business with expert AI & ML services by GENXEL.
         </p>
       </div>
     </div>

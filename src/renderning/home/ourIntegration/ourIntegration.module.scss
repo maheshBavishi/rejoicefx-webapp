@@ -2,6 +2,7 @@
 
 .ourIntegration {
     padding: 0 0 100px 0;
+    overflow: hidden;
 
     h2 {
         color: #0B0B14;
@@ -10,17 +11,304 @@
         margin: 0 0 60px 0;
     }
 
-    .imageWrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .diagramWrapper {
+        display: none;
+        position: relative;
+        width: 1100px;
+        height: 700px;
+        left: 50%;
+        transform: translateX(-50%);
+        transform-origin: top center;
+
+        @media (min-width: 1200px) {
+            display: block;
+            transform: translateX(-50%) scale(1);
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 1199px) and (min-width: 992px) {
+            display: block;
+            transform: translateX(-50%) scale(0.85);
+            margin-bottom: calc(700px * (0.85 - 1));
+        }
+
+        @media (max-width: 991px) and (min-width: 768px) {
+            display: block;
+            transform: translateX(-50%) scale(0.65);
+            margin-bottom: calc(700px * (0.65 - 1));
+        }
+    }
+
+    .connections {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
+        height: 100%;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    .card {
+        position: absolute;
+        background: #ffffff;
+        border: 1px solid #f8fafc;
+        border-radius: 16px;
+        padding: 24px;
+        z-index: 2;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #eef2ff;
+            border-radius: 16px;
+            z-index: -1;
+            transform: translate(6px, 6px);
+            transition: transform 0.3s ease;
+        }
+
+        &:hover::before {
+            transform: translate(8px, 8px);
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 14px;
+            font-weight: 700;
+            color: #0B0B14;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .grid {
+            display: grid;
+            gap: 12px;
+
+            .item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #f8fafc;
+                padding: 10px 8px;
+                border-radius: 8px;
+                min-height: 48px;
+                box-shadow: 0px 0px 10.81px 0px #0000000D;
+                border: 1px solid #f1f5f9;
+                transition: all 0.2s ease;
+
+                img {
+                    max-width: 100%;
+                    max-height: 40px;
+                    object-fit: contain;
+                }
+
+
+            }
+        }
+
+        .badge {
+            position: absolute;
+            right: -20px;
+            top: 55%;
+            transform: translateY(-50%);
+            width: 44px;
+            height: 44px;
+            background: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 700;
+            color: #64748b;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+            border: 1px solid #f1f5f9;
+            z-index: 3;
+        }
+    }
+
+    .crmCard {
+        top: 0;
+        left: 450px;
+        width: 250px;
+
+        .grid {
+            grid-template-columns: 1fr;
+
+            .item {
+                img {
+                    height: 45px !important;
+                }
+            }
+        }
+    }
+
+    .tradingCard {
+        top: 150px;
+        left: -7%;
+        width: 400px;
+
+        .grid {
+            grid-template-columns: 1fr 1fr;
+
+            .item {
+                img {
+                    height: 35px;
+                }
+            }
+        }
+    }
+
+    .pspCard {
+        top: 150px;
+        right: -4%;
+        width: 380px;
+
+        .grid {
+            grid-template-columns: 1fr 1fr;
+
+            .item {
+                img {
+                    height: 35px;
+                }
+            }
+        }
+    }
+
+    .bridgeCard {
+        bottom: 50px;
+        left: -5%;
+        width: 420px;
+
+        .grid {
+            grid-template-columns: 1fr 1fr;
+
+            .item {
+                img {
+                    height: 35px;
+                }
+            }
+        }
+    }
+
+    .liquidityCard {
+        bottom: 50px;
+        right: 0;
+        width: 420px;
+
+        .grid {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    .centerNode {
+        position: absolute;
+        top: 290px;
+        left: 490px;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .centerCircle {
+        width: 120px;
+        height: 120px;
+        background: #ffffff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 30px rgba(79, 70, 229, 0.15);
+        font-weight: 800;
+        font-size: 18px;
+        border: 1px solid #eef2ff;
+        position: relative;
+
+        span {
+            z-index: 2;
+            background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 2px dashed rgba(79, 70, 229, 0.3);
+            animation: spin 15s linear infinite;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 1px dashed rgba(79, 70, 229, 0.2);
+            animation: spin 20s linear infinite reverse;
+        }
 
         img {
-            display: block;
-            margin: 0 auto;
-            max-width: 100%;
-            height: auto;
+            width: 100px;
         }
+    }
+
+    .mobileLayout {
+        display: none;
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 20px;
+        align-items: center;
+
+        @media (max-width: 767px) {
+            display: flex;
+        }
+
+        .centerNodeMobile {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            position: relative;
+            top: auto;
+            left: auto;
+            right: auto;
+            bottom: auto;
+            width: 100%;
+            max-width: 400px;
+            transform: none;
+
+            .badge {
+                right: -10px;
+            }
+        }
+
+        .liquidityCard {
+            .grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
     }
 }

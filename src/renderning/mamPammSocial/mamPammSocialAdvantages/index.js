@@ -42,7 +42,7 @@ export default function MamPammSocialAdvantages() {
                         <CommonButton text="Advantages" />
                     </div>
                     <h2>
-                        Advantages of RejoiceFX MAM/PAMM Solutions
+                        Advantages of GENXEL MAM/PAMM Solutions
                     </h2>
                     <div className={styles.grid}>
                         <div className={styles.items}>

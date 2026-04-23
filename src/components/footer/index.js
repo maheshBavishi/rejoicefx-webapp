@@ -120,7 +120,7 @@ export default function Footer() {
             </div>
             <div className={styles.footerGridItems}>
               <div className={styles.lastText}>
-                <h3>Get started to up your business with personal RejoiceFX</h3>
+                <h3>Get started to up your business with personal GENXEL</h3>
               </div>
               {/* <form onSubmit={functionPostContact}> */}
               <div className={styles.input}>
@@ -140,7 +140,7 @@ export default function Footer() {
             </div>
           </div>
           <div className={styles.copyRight}>
-            <p>© 2025 RejoiceFX. All rights reserved.</p>
+            <p>© 2026 GENXEL. All rights reserved.</p>
           </div>
         </div>
       </footer>

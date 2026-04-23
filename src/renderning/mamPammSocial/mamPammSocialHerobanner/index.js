@@ -15,7 +15,7 @@ export default function MamPammSocialHerobanner() {
                     </h2>
                     <p>
                         Streamline fund management and maximize trading efficiency with
-                        <b>RejoiceFX MAM/PAMM Social Trading Platform. </b> Designed for brokers, asset managers, and professional traders, our solution enables you to manage multiple client accounts from a single master account with precision, transparency, and automation.
+                        <b>GENXEL MAM/PAMM Social Trading Platform. </b> Designed for brokers, asset managers, and professional traders, our solution enables you to manage multiple client accounts from a single master account with precision, transparency, and automation.
                     </p>
                 </div>
             </div>

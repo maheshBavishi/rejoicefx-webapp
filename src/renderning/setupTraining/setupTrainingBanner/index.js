@@ -15,7 +15,7 @@ export default function SetupTrainingBanner() {
                     </h1>
                 </div>
                 <p className={styles.description}>
-                    Deploy and manage your trading platform seamlessly with RejoiceFX MetaTrader solutions. From setup to ongoing support,
+                    Deploy and manage your trading platform seamlessly with GENXEL MetaTrader solutions. From setup to ongoing support,
                     we provide everything you need.
                 </p>
             </div>

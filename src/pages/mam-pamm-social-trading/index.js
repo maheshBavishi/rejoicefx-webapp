@@ -6,10 +6,10 @@ export default function index() {
     return (
         <div>
             <Head>
-                <title>MAM/PAMM Social Trading Solutions | Multi-Account Management Platform | RejoiceFX</title>
+                <title>MAM/PAMM Social Trading Solutions | Multi-Account Management Platform | GENXEL</title>
                 <meta
                     name="description"
-                    content="Manage multiple trading accounts efficiently with RejoiceFX MAM/PAMM solutions. Offer professional fund management, automated allocations, and scalable trading infrastructure."
+                    content="Manage multiple trading accounts efficiently with GENXEL MAM/PAMM solutions. Offer professional fund management, automated allocations, and scalable trading infrastructure."
                 />
                 <meta
                     name="keywords"

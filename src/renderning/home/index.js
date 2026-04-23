@@ -22,7 +22,7 @@ export default function Homepage() {
       <Aboutus />
       <Service />
       <Product />
-      <Calculator />
+      {/* <Calculator /> */}
       <OurIntegration />
       <OurClients />
     </div>

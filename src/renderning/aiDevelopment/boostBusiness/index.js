@@ -15,7 +15,7 @@ export default function BoostBusiness() {
                                 Get Significant Boost to Your Business with AI/ML Devleopment Services
                             </h2>
                             <p>
-                                Gives information about how RejoiceFX has grown and what they have achieved since the year 2019 which clearly portrays our commitment to quality
+                                Gives information about how GENXEL has grown and what they have achieved since the year 2019 which clearly portrays our commitment to quality
                                 and client satisfaction.
                             </p>
                         </div>

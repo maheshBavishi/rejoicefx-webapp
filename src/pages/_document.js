@@ -4,10 +4,10 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <title>RejoiceFX : Turnkey Services For Forex | Forex CRM, Licensing, and Algo Trading Solutions</title>
-        <meta name="description" content="Start and scale your Forex brokerage with RejoiceFX. We specialize in Forex CRM, brokerage licensing, algorithmic trading software, and a marketplace for innovative trading strategies." />
+        <title>GENXEL : Turnkey Services For Forex | Forex CRM, Licensing, and Algo Trading Solutions</title>
+        <meta name="description" content="Start and scale your Forex brokerage with GENXEL. We specialize in Forex CRM, brokerage licensing, algorithmic trading software, and a marketplace for innovative trading strategies." />
         <meta name="keywords" content="Forex CRM, Forex License, Algo Trading Software, Forex Turnkey Solutions, MT4 White Label, MT5 White Label, Forex Brokerage Solutions, Forex Technology Provider" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"

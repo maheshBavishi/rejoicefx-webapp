@@ -4,26 +4,28 @@
     :global(.atropos) {
         border-radius: 9999px;
     }
+
     &.outline {
         button {
-            border: 1px solid #014EFF;
+            border: 1px solid #8A2BE2;
             color: #0B0B14;
             background-color: transparent;
             transition: .3s ease-in-out;
             display: flex;
             align-items: center;
             gap: 6px;
+            cursor: pointer;
 
             &:hover {
                 color: #fff;
-                background: #014EFF;
+                background: #8A2BE2;
 
             }
         }
     }
 
     button {
-        background: #014EFF;
+        background: #8A2BE2;
         padding: 10px 24px;
         color: #fff;
         border-radius: 999px;
@@ -34,8 +36,8 @@
         align-items: center;
         gap: 6px;
         line-height: 24px;
-        border: 1px solid #014EFF;
-        transition: .3s ease-in-out;    
+        border: 1px solid #8A2BE2;
+        transition: .3s ease-in-out;
 
 
         @include breakpoint("sm-max") {
@@ -44,11 +46,12 @@
         }
 
         &:hover {
-            border: 1px solid #014EFF;
+            border: 1px solid #8A2BE2;
             color: #014EFF;
             background-color: transparent;
         }
     }
+
     .loader {
         margin-left: 8px;
         width: 18px;
@@ -59,17 +62,20 @@
         animation: spin 0.8s linear infinite;
         vertical-align: middle;
     }
+
     @keyframes spin {
         0% {
             transform: rotate(0deg);
         }
+
         100% {
             transform: rotate(360deg);
         }
     }
+
     .btnStyle {
-        //   border: 1px solid #014eff;
-          border-radius: 999px !important;
-          color: #014eff;
-        }
+        //   border: 1px solid #8A2BE2;
+        border-radius: 999px !important;
+        color: #014eff;
+    }
 }

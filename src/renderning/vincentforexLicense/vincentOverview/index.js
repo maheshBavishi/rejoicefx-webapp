@@ -112,7 +112,7 @@ export default function VincentOverview() {
                                 Why Choose St. Vincent Your Forex Brokerage?
                             </h2>
                             <p>
-                            RejoiceFX offers a complete setup for establishing an unregulated Forex Company in St. Vincent and the Grenadines. While St. Vincent is an unregulated jurisdiction, we ensure your documents are prepared to allow smooth operation of your Forex brokerage. This makes St. Vincent an affordable and efficient solution for starting a Forex brokerage from
+                                GENXEL offers a complete setup for establishing an unregulated Forex Company in St. Vincent and the Grenadines. While St. Vincent is an unregulated jurisdiction, we ensure your documents are prepared to allow smooth operation of your Forex brokerage. This makes St. Vincent an affordable and efficient solution for starting a Forex brokerage from
                                 a broker’s perspective.
                             </p>
                             <p>

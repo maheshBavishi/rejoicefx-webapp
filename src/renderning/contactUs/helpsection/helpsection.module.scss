@@ -27,7 +27,7 @@
         }
 
         .griditems:first-child {
-            background: var(--Foundation-Blue-Normal, #014EFF);
+            background: linear-gradient(137.56deg, #8A2BE2 0%, #3FA9F5 47.95%, #AEEBFF 95.91%);
             border-radius: 20px 0 0 20px;
             padding: 50px;
 
@@ -197,7 +197,7 @@
 
                 &:focus {
                     outline: none;
-                    border: 1px solid #014EFF;
+                    border: 1px solid #8A2BE2;
                 }
 
             }
@@ -218,7 +218,7 @@
 
                 &:focus {
                     outline: none;
-                    border: 1px solid #014EFF;
+                    border: 1px solid #8A2BE2;
                 }
 
             }

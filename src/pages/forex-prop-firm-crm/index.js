@@ -6,10 +6,10 @@ export default function index() {
     return (
         <>
             <Head>
-                <title>Forex Prop Firm CRM Solutions | Manage & Scale Your Prop Trading Firm | RejoiceFX</title>
+                <title>Forex Prop Firm CRM Solutions | Manage & Scale Your Prop Trading Firm | GENXEL</title>
                 <meta
                     name="description"
-                    content="Launch and scale your proprietary trading firm with RejoiceFX Prop Firm CRM. Manage traders, challenges, payouts, risk, and analytics with an all-in-one automated solution."
+                    content="Launch and scale your proprietary trading firm with GENXEL Prop Firm CRM. Manage traders, challenges, payouts, risk, and analytics with an all-in-one automated solution."
                 />
                 <meta
                     name="keywords"

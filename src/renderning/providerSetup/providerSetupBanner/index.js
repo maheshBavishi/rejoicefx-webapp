@@ -12,7 +12,7 @@ export default function ProviderSetupBanner() {
                     Connect with Top Liquidity Providers for Seamless Trading
                 </h2>
                 <p>
-                    Access deep liquidity and competitive spreads with RejoiceFX Liquidity Provider Setup Services. We connect
+                    Access deep liquidity and competitive spreads with GENXEL Liquidity Provider Setup Services. We connect
                     you with trusted global LPs and handle full integration.
                 </p>
             </div>

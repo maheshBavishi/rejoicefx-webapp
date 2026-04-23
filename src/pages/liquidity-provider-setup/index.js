@@ -6,10 +6,10 @@ export default function index() {
     return (
         <div>
             <Head>
-                <title>Liquidity Provider Setup | Forex Liquidity Solutions | RejoiceFX</title>
+                <title>Liquidity Provider Setup | Forex Liquidity Solutions | GENXEL</title>
                 <meta
                     name="description"
-                    content="Connect with top liquidity providers like Finalto, LMAX, and more. RejoiceFX offers seamless liquidity setup for Forex brokers."
+                    content="Connect with top liquidity providers like Finalto, LMAX, and more. GENXEL offers seamless liquidity setup for Forex brokers."
                 />
             </Head>
             <ProviderSetup />

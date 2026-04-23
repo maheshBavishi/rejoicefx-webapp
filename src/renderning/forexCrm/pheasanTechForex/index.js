@@ -12,7 +12,7 @@ export default function PheasanTechForex() {
                         <CommonButton text="Forex CRM" />
                     </div>
                     <h2>
-                        Why choose RejoiceFX Forex CRM?
+                        Why choose GENXEL Forex CRM?
                     </h2>
                     <div className={styles.grid}>
                         <div>

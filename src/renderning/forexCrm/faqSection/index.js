@@ -11,15 +11,15 @@ const FAQ_Content = [
     },
     {
         question: "What if I want to import the users from my previous solution?",
-        answer: "We support any type of data import, we will customise the script under your specifications and will make a migration so that all the data is safely transferred to RejoiceFX.",
+        answer: "We support any type of data import, we will customise the script under your specifications and will make a migration so that all the data is safely transferred to GENXEL.",
     },
     {
         question: "After the purchase how can I familiarise myself with the product functionalities?",
         answer: "We have built a strong onboarding procedures. You will have a personal account manager that will provide you with all the necessary documentation on the product possibilities. In addition, we will schedule a call with the product manager that will walk you through the functionality and will answer all of your questions.",
     },
     {
-        question: "What if I need something extra development for my RejoiceFX solution?",
-        answer: "We have a team of 30+ dedicated developers that are working on RejoiceFX improvements and new features and we are always open for client wishes. All you will need to do is to give us a technical description of what you want and our team will take care about the implementation and your personal account manager will keep you posted about the release dates.",
+        question: "What if I need something extra development for my GENXEL solution?",
+        answer: "We have a team of 30+ dedicated developers that are working on GENXEL improvements and new features and we are always open for client wishes. All you will need to do is to give us a technical description of what you want and our team will take care about the implementation and your personal account manager will keep you posted about the release dates.",
     },
     {
         question: "How do I report any issues regarding the product?",

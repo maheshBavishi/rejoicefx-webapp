@@ -38,10 +38,10 @@ export default function CopyTradingAdvantages() {
             <div className={styles.advantages}>
                 <div className='container'>
                     <div className={styles.centerAlignment}>
-                        <CommonButton text="RejoiceFX Copy Trading Platform" />
+                        <CommonButton text="GENXEL Copy Trading Platform" />
                     </div>
                     <h2>
-                        Advantages of RejoiceFX Copy Trading Platform
+                        Advantages of GENXEL Copy Trading Platform
                     </h2>
                     <div className={styles.grid}>
                         <div className={styles.items}>

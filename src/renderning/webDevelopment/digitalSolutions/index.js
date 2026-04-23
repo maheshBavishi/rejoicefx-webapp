@@ -19,10 +19,10 @@ export default function DigitalSolutions() {
                     <div className={styles.griditems}>
                         <CommonButton text="Innovative Digital Solutions" />
                         <h2>
-                            Why RejoiceFX for Mobile & Web Development?
+                            Why GENXEL for Mobile & Web Development?
                         </h2>
                         <p>
-                            At RejoiceFX, we don’t just build mobile apps and websites—we craft digital experiences that empower your business. Our team combines technical expertise, creative design, and a deep understanding of industry trends to deliver cutting-edge
+                            At GENXEL, we don’t just build mobile apps and websites—we craft digital experiences that empower your business. Our team combines technical expertise, creative design, and a deep understanding of industry trends to deliver cutting-edge
                             solutions that drive growth.
                         </p>
                         <div className={styles.buttonDesign}>

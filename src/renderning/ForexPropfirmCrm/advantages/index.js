@@ -39,10 +39,10 @@ export default function Advantages() {
             <div className={styles.advantages}>
                 <div className='container'>
                     <div className={styles.centerAlignment}>
-                        <CommonButton text="Advantages of RejoiceFX" />
+                        <CommonButton text="Advantages of GENXEL" />
                     </div>
                     <h2>
-                        Advantages of RejoiceFX Prop Firm CRM
+                        Advantages of GENXEL Prop Firm CRM
                     </h2>
                     <div className={styles.grid}>
                         <div className={styles.items}>

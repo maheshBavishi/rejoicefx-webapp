@@ -10,7 +10,7 @@
     .blueBox {
         border-radius: 34px;
         padding: 120px 0;
-        background: var(--Foundation-Blue-Normal, #014EFF);
+        background: linear-gradient(137.56deg, #8A2BE2 0%, #3FA9F5 47.95%, #AEEBFF 95.91%);
 
         @include breakpoint("md-max") {
             padding: 60px 0;
@@ -122,11 +122,13 @@
                 display: flex;
                 align-items: center;
                 gap: 30px;
+
                 @include breakpoint("sm-max") {
                     display: grid;
                     grid-template-columns: 1fr;
                     gap: 20px;
                 }
+
                 span {
                     display: block;
                     color: var(--Foundation-White-Light, #FFF);
