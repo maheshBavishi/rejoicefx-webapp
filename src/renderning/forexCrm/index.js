@@ -15,7 +15,7 @@ export default function ForexCrm() {
       <ForexCrmBanner />
       <Slidersection />
       <WorksLike />
-      <BuildingaBrokerage />
+      {/* <BuildingaBrokerage /> */}
       <CrmSystem />
       <Unmatchedfrontend />
       <PheasanTechForex />
