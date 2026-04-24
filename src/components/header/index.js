@@ -98,7 +98,7 @@ const menuItems = [
       {
         title: "News",
         description: "Stay updated with the latest news, product releases, and market updates.",
-        redirectLink: "/",
+        redirectLink: "/news",
       },
       {
         title: "Case Studies",
