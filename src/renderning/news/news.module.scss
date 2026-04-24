@@ -1,0 +1,207 @@
+@import "../../scss/mixins/index.scss";
+
+.newsPage {
+  background-color: #ffffff;
+  color: #0b0b14;
+  padding-bottom: 100px;
+  font-family: "Poppins", sans-serif;
+}
+
+.heroSection {
+  background-image: url('/assets/images/banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 34px;
+  padding: 100px 0;
+  margin-top: 20px;
+  text-align: center;
+
+  @include breakpoint("sm-max") {
+    border-radius: 12px;
+    padding: 60px 20px;
+  }
+
+  .buttonCenteralignment {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    color: #0b0b14;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin: 0 auto 20px;
+    max-width: 900px;
+
+    @include breakpoint("md-max") {
+      font-size: 50px;
+    }
+
+    @include breakpoint("sm-max") {
+      font-size: 32px;
+    }
+
+
+  }
+
+  .description {
+    color: #595959;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 40px;
+
+    @include breakpoint("sm-max") {
+      font-size: 14px;
+    }
+  }
+
+
+}
+
+.cardsSection {
+  padding: 80px 0;
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+
+    @include breakpoint("md-max") {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include breakpoint("sm-max") {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .featureCard {
+    background: #fff;
+    border: 1px solid #eef2ff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0px 4px 20px rgba(1, 78, 255, 0.05);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 10px 30px rgba(1, 78, 255, 0.1);
+      border-color: #014eff;
+    }
+
+    .iconWrapper {
+      background: #f0f4ff;
+      width: 50px;
+      height: 50px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #014eff;
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #0b0b14;
+    }
+
+    p {
+      font-size: 14px;
+      color: #595959;
+      line-height: 1.6;
+    }
+  }
+}
+
+.tableSection {
+  background: #fff;
+  border: 6px solid #d9e4ff;
+  border-radius: 34px;
+  padding: 40px;
+  box-shadow: 0px 4px 54px rgba(1, 78, 255, 0.1);
+
+  @include breakpoint("sm-max") {
+    padding: 20px;
+    border-width: 3px;
+  }
+
+  .tableHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .filters {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+
+      h2 {
+        color: #0b0b14;
+        font-size: 24px;
+        font-weight: 600;
+        margin: 0;
+      }
+    }
+
+    .filterBtn {
+      padding: 8px 16px;
+      border-radius: 40px;
+      font-size: 14px;
+      cursor: pointer;
+      background: #f8faff;
+      border: 1px solid #e0e7ff;
+      color: #595959;
+      font-weight: 500;
+      transition: all 0.2s;
+
+      &:hover {
+        border-color: #014eff;
+        color: #014eff;
+      }
+
+      &.active {
+        background: #8a2be2;
+        color: #fff;
+        border-color: #8a2be2;
+      }
+    }
+  }
+
+  .timezone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #f8faff;
+    padding: 8px 16px;
+    border-radius: 40px;
+    border: 1px solid #e0e7ff;
+    font-size: 14px;
+    color: #595959;
+  }
+}
+
+.tableWrapper {
+  overflow: hidden;
+  border-radius: 12px;
+  background: #fff;
+
+  /* Project theme color overrides for TradingView widget */
+  --tv-color-brand: #8a2be2;
+  --tv-color-accent: #8a2be2;
+}
