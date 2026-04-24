@@ -4,7 +4,6 @@
     border-radius: 34px;
     background: linear-gradient(137.56deg, #8A2BE2 0%, #3FA9F5 47.95%, #AEEBFF 95.91%);
     padding: 80px 80px 80px 80px;
-    height: 420px;
 
     @include breakpoint("md-max") {
         height: auto;
@@ -17,14 +16,6 @@
 
 
     .grid {
-        display: grid;
-        grid-template-columns: 1fr 540px;
-        gap: 80px;
-
-        @include breakpoint("md-max") {
-            grid-template-columns: 1fr;
-            gap: 40px;
-        }
 
         button {
             border: none;

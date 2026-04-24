@@ -69,6 +69,12 @@ const menuItems = [
         description: "Cutting-edge artificial intelligence and machine learning solutions for trading.",
         redirectLink: "/ai-development",
       },
+      {
+        title: "AI bot development",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        redirectLink: "/algo-bot",
+      },
+
     ],
   },
   {
@@ -84,11 +90,11 @@ const menuItems = [
   {
     title: "Resources",
     submenu: [
-      {
-        title: "Blog",
-        description: "Insights, tutorials, and the latest trends from the Forex industry experts.",
-        redirectLink: "/",
-      },
+      // {
+      //   title: "Blog",
+      //   description: "Insights, tutorials, and the latest trends from the Forex industry experts.",
+      //   redirectLink: "/",
+      // },
       {
         title: "News",
         description: "Stay updated with the latest news, product releases, and market updates.",
