@@ -1,15 +1,9 @@
 .whyChoose {
-    padding: 109px 0 100px;
+    padding: 109px 0;
     background: #fff;
-    overflow: visible;
-    font-family: "Inter", sans-serif;
 
     @media (max-width: 991px) {
         padding: 60px 0 36px;
-    }
-
-    :global(.container) {
-        max-width: 1640px; // 1600px + 40px padding
     }
 
     .header {
@@ -57,11 +51,8 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 140px;
+        gap: 100px;
         margin-bottom: 16px;
-        max-width: 1600px;
-        margin-left: auto;
-        margin-right: auto;
 
         @media (max-width: 1200px) {
             gap: 60px;
@@ -123,6 +114,7 @@
         object-fit: contain;
         filter: drop-shadow(0 8px 12px rgba(0, 48, 158, 0.12));
     }
+
     .featureItem {
         display: flex;
         gap: 16px;
@@ -153,7 +145,6 @@
             flex: 1;
 
             h3 {
-                font-family: 'Monda', sans-serif;
                 font-size: 20px;
                 font-weight: 700;
                 color: #000000;
@@ -168,7 +159,6 @@
             }
 
             p {
-                font-family: 'Inter', sans-serif;
                 font-weight: 500;
                 font-size: 16px;
                 color: rgba(26, 26, 26, 0.7);
@@ -189,7 +179,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        gap: 42px;
+        gap: 40px;
         width: 100%;
         max-width: 716px;
         margin: 0 auto;
@@ -207,7 +197,7 @@
             flex-direction: column;
             gap: 4px;
             justify-content: center;
-            padding: 0 10px;
+            padding: 0 5px;
             position: relative;
 
             &:not(:last-child)::after {
@@ -230,9 +220,8 @@
             }
 
             .statValue {
-                font-family: 'Monda', sans-serif;
-                font-size: 40px;
-                line-height: 65px;
+                font-size: 30px;
+                line-height: 40px;
                 font-weight: 700;
                 color: #1A1A1A;
                 display: flex;
@@ -246,8 +235,7 @@
             }
 
             .statLabel {
-                font-family: 'Inter', sans-serif;
-                font-size: 18px;
+                font-size: 16px;
                 font-weight: 500;
                 color: rgba(26, 26, 26, 0.7);
                 line-height: 22px;
