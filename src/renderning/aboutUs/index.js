@@ -3,6 +3,7 @@ import AboutUsBanner from './aboutUsBanner'
 import Aboutus from '../home/aboutus'
 import OurIntegration from '../home/ourIntegration'
 import Slidersection from '../home/slidersection'
+import Whychoose from '../home/whyChoose'
 
 export default function AboutUsPage() {
     return (
@@ -11,6 +12,7 @@ export default function AboutUsPage() {
             <Slidersection />
             <Aboutus />
             <OurIntegration />
+            <Whychoose />
         </div>
     )
 }
