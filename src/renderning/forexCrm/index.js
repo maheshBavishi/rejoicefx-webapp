@@ -12,6 +12,7 @@ import Slidersection from '../home/slidersection'
 export default function ForexCrm() {
   return (
     <div>
+
       <ForexCrmBanner />
       <Slidersection />
       <WorksLike />
