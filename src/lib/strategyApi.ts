@@ -11,6 +11,7 @@ export const getStrategies = async (page = 1, limit = 10) => {
     console.error("Error fetching strategies:", error);
     return [];
   }
+  
 };
 
 export const getStrategyById = async (id: string) => {
