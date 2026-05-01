@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 
 const features = [
     {
-        icon: <img src="/assets/icons/point-1.svg" alt="Why Choose RejoiceFX" />,
-        title: 'Why Choose RejoiceFX',
-        description: 'RejoiceFX empowers forex brokers and traders with an all-in-one ecosystem combining advanced technology, automation, and expert support to launch, manage, and scale brokerage businesses without complexity.'
+        icon: <img src="/assets/icons/point-1.svg" alt="Why Choose GENXEL" />,
+        title: 'Why Choose GENXEL',
+        description: 'GENXEL empowers forex brokers and traders with an all-in-one ecosystem combining advanced technology, automation, and expert support to launch, manage, and scale brokerage businesses without complexity.'
     },
     {
         icon: <img src="/assets/icons/point-2.svg" alt="Complete Brokerage Solution" />,
@@ -48,7 +48,7 @@ export default function WhyChoose() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        Why Choose RejoiceFX
+                        Why Choose GENXEL
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
@@ -56,7 +56,7 @@ export default function WhyChoose() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.1 }}
                     >
-                        RejoiceFX empowers forex brokers and traders with an all-in-one ecosystem combining advanced technology, automation, and expert support to launch, manage, and scale brokerage businesses without complexity.
+                        GENXEL empowers forex brokers and traders with an all-in-one ecosystem combining advanced technology, automation, and expert support to launch, manage, and scale brokerage businesses without complexity.
                     </motion.p>
                 </div>
 
