@@ -4,6 +4,16 @@
     padding: 0 0 100px 0;
     overflow: hidden;
 
+    @media (max-width:576px) {
+        padding: 0 0 60px 0;
+    }
+
+    :global(.container) {
+        @media (max-width:576px) {
+            padding: 0;
+        }
+    }
+
     h2 {
         color: #0B0B14;
         @include heading1;
