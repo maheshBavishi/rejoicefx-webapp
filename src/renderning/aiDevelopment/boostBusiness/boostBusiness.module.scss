@@ -2,17 +2,21 @@
 
 .boostBusiness {
     padding: 120px 0;
+
     @include breakpoint("md-max") {
         padding: 60px 0;
     }
+
     .grid {
         display: grid;
         grid-template-columns: 650px 1fr;
         gap: 100px;
+
         @include breakpoint("md-max") {
             grid-template-columns: 1fr;
             gap: 40px;
         }
+
         .griditems {
 
 
@@ -21,6 +25,7 @@
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 gap: 20px;
+
                 @include breakpoint("sm-max") {
                     grid-template-columns: 1fr;
                 }
@@ -37,7 +42,7 @@
                     }
 
                     h3 {
-                        color: var(--Foundation-Blue-Normal, #014EFF);
+                        color: var(--Foundation-Blue-Normal, #8A2BE2);
                         font-size: 40px;
                         margin: 0 0 10px 0;
                         font-style: normal;
@@ -56,7 +61,7 @@
                         font-style: normal;
                         font-weight: 500;
                         line-height: 30px;
-                        
+
                     }
                 }
             }

@@ -1,0 +1,173 @@
+@import '../../../scss/mixins/index.scss';
+
+.benefitsSection {
+    padding: 100px 0;
+    background-image: url("/assets/images/service.png");
+    background-size: cover;
+    width: 100%;
+    border-radius: 34px;
+    margin: 0 0 100px 0;
+
+    @include breakpoint("sm-max") {
+        padding: 60px 0;
+        margin: 0 0 60px 0;
+    }
+
+    .header {
+        text-align: center;
+        max-width: 900px;
+        margin: 0 auto 60px;
+
+        .title {
+            display: inline-block;
+            padding: 4px 16px;
+            background: rgba(138, 43, 226, 0.05);
+            color: #8A2BE2;
+            border-radius: 999px;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        .mainHeading {
+            @include heading1;
+            color: #0B0B14;
+            margin-bottom: 20px;
+            @include heading-font;
+            font-size: clamp(32px, 4vw, 42px);
+        }
+
+        .subtitle {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #595959;
+        }
+    }
+
+    .featuresGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin-bottom: 80px;
+
+        @include breakpoint("md-max") {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint("sm-max") {
+            grid-template-columns: 1fr;
+        }
+
+        .featureCard {
+            background: #ffffff;
+            border: 1px solid #f0f0f0;
+            padding: 24px;
+            border-radius: 16px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            &:hover {
+                transform: translateY(-10px);
+                border-color: #8A2BE2;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+
+            }
+
+            .iconBox {
+                padding: 0 0 12px 0;
+
+                img {
+                    max-width: 50px;
+                }
+            }
+
+            .cardContent {
+                h4 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: #0B0B14;
+                    margin-bottom: 15px;
+                    @include heading-font;
+                }
+
+                p {
+                    font-size: 15px;
+                    line-height: 1.6;
+                    color: #595959;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .highlightsBox {
+        background: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 30px;
+        padding: 60px;
+
+        @include breakpoint("sm-max") {
+            padding: 40px 24px;
+        }
+
+        .highlightsTitle {
+            font-size: 28px;
+            font-weight: 700;
+            color: #0B0B14;
+            margin-bottom: 40px;
+            text-align: center;
+            @include heading-font;
+        }
+
+        .highlightsGrid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+
+            @include breakpoint("md-max") {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @include breakpoint("sm-max") {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .highlightItem {
+                display: flex;
+                gap: 16px;
+                align-items: flex-start;
+
+                .bullet {
+                    width: 8px;
+                    height: 8px;
+                    background: #8A2BE2;
+                    border-radius: 50%;
+                    margin-top: 8px;
+                    flex-shrink: 0;
+                }
+
+                .highlightText {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+
+                    .label {
+                        font-size: 17px;
+                        font-weight: 700;
+                        color: #0B0B14;
+                    }
+
+                    .subText {
+                        font-size: 14px;
+                        color: #595959;
+                    }
+                }
+            }
+        }
+    }
+}

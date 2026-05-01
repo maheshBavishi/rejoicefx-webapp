@@ -33,7 +33,7 @@
   }
 
   .planPrice {
-    color: #014eff;
+    color: #8A2BE2;
     font-size: 28px;
     font-weight: 700;
     line-height: 36px;
@@ -108,7 +108,7 @@
         margin-top: 12px;
 
         a {
-          color: #014eff;
+          color: #8A2BE2;
           cursor: pointer;
         }
       }
@@ -138,7 +138,7 @@
           cursor: pointer;
 
           path {
-            fill: #014eff;
+            fill: #8A2BE2;
           }
 
           &:hover path {
@@ -151,36 +151,36 @@
 }
 
 .inputGroup {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-  
-    label {
-      font-size: 14px;
-      font-weight: 500;
-      color: #0f0f1a;
-    }
-  
-    input {
-      border: 1px solid #d1d5db;
-      border-radius: 8px;
-      padding: 10px 14px;
-      font-size: 14px;
-      transition: all 0.3s ease;
-      background: #f9f9f9;
-      outline: none;
-  
-      &:focus {
-        border-color: #014eff;
-        background: #fff;
-      }
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #0f0f1a;
+  }
+
+  input {
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background: #f9f9f9;
+    outline: none;
+
+    &:focus {
+      border-color: #8A2BE2;
+      background: #fff;
     }
   }
-  
-  .submitBtn {
-    margin-top: 10px;
-  }
-  
+}
+
+.submitBtn {
+  margin-top: 10px;
+}
+
 .successContainer {
   min-height: 80vh;
   display: flex;
@@ -192,7 +192,7 @@
 .successCard {
   background: #fff;
   border-radius: 16px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
   padding: 40px 32px;
   text-align: center;
   max-width: 400px;
@@ -217,7 +217,7 @@
 // }
 
 .homeBtn {
-  background: #014eff;
+  background: #8A2BE2;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -237,6 +237,7 @@
     opacity: 0;
     transform: translateY(10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -245,7 +246,10 @@
 
 .modalOverlay {
   position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: rgba(0, 0, 0, 0.4);
   display: flex;
   align-items: center;

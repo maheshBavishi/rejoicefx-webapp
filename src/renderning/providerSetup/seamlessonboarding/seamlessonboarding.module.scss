@@ -1,0 +1,108 @@
+@import '../../../scss/mixins/index.scss';
+
+.seamlessonboarding {
+    padding: 100px 0 0 0;
+    background: #ffffff;
+    position: relative;
+
+    @include breakpoint("sm-max") {
+        padding: 60px 0 0 0;
+    }
+
+    .mainGrid {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        gap: 80px;
+        align-items: flex-start;
+
+        @include breakpoint("md-max") {
+            grid-template-columns: 1fr;
+            gap: 60px;
+        }
+    }
+
+    .leftContent {
+        .mainTitle {
+            @include heading1;
+            color: #0B0B14;
+            margin-bottom: 30px;
+            font-size: clamp(36px, 5vw, 56px);
+            line-height: 1.1;
+            @include heading-font;
+        }
+
+        .descriptionGroup {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            margin-bottom: 40px;
+
+            .description {
+                font-size: 18px;
+                line-height: 1.6;
+                color: #595959;
+                margin: 0;
+            }
+        }
+
+
+    }
+
+    .rightContent {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .featureCard {
+        background: #ffffff;
+        border: 1px solid #f0f0f0;
+        border-radius: 16px;
+        padding: 24px;
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+
+        &:hover {
+            transform: translateX(10px);
+            border-color: #8A2BE2;
+            box-shadow: 0 10px 30px rgba(1, 78, 255, 0.05);
+        }
+
+        .iconBox {
+            flex-shrink: 0;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 40px;
+                height: 40px;
+                object-fit: contain;
+                // Keep original colors from SVG if possible, or style as per image (which looks like outline/black)
+                // The image shows outline icons. I'll use the colored ones from assets but maybe apply a filter if they are too bright.
+            }
+        }
+
+        .cardBody {
+            h3 {
+                font-size: 20px;
+                font-weight: 700;
+                color: #0B0B14;
+                margin-bottom: 10px;
+                @include heading-font;
+            }
+
+            p {
+                font-size: 15px;
+                line-height: 1.6;
+                color: #595959;
+                margin: 0;
+            }
+        }
+    }
+}

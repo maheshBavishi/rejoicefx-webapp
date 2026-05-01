@@ -2,6 +2,7 @@
 
 .calculatorDetails {
     padding: 120px 0;
+
     @include breakpoint("md-max") {
         padding: 60px 0;
     }
@@ -47,7 +48,7 @@
                 padding: 0 0 12px 0;
 
                 .icons {
-                    background-color: #014EFF;
+                    background-color: #8A2BE2;
                     width: 30px;
                     height: 30px;
                     display: flex;

@@ -7,6 +7,7 @@ import BoostBusiness from './boostBusiness'
 import WorkProcess from './workProcess'
 import WhatisDevelopment from './whatisDevelopment'
 import Slidersection from '../home/slidersection'
+import TransformChallenges from './transformChallenges'
 
 export default function AiDevelopment() {
   return (
@@ -16,6 +17,7 @@ export default function AiDevelopment() {
       <TransformSection />
       <SolutionSection />
       <BoostBusiness />
+      <TransformChallenges />
       <WorkProcess />
       <WhatisDevelopment />
     </div>

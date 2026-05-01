@@ -4,6 +4,8 @@ import SetupTrainingWhatWeOffer from './setupTrainingWhatWeOffer'
 import WhyChooseSetupTraining from './whyChooseSetupTraining'
 import SetupTrainingHowItWork from './setupTrainingHowItWork'
 import Slidersection from '../home/slidersection'
+import Mt4Roadmap from './mt4Roadmap'
+import BenefitsSection from './benefitsSection'
 
 export default function SetupTraining() {
     return (
@@ -11,7 +13,9 @@ export default function SetupTraining() {
             <SetupTrainingBanner />
             <Slidersection />
             <SetupTrainingWhatWeOffer />
+            <Mt4Roadmap />
             <WhyChooseSetupTraining />
+            <BenefitsSection />
         </div>
     )
 }

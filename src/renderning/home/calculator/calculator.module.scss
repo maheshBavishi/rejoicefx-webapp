@@ -84,12 +84,12 @@
 
             &.itemsActive {
                 &::before {
-                    background-color: #014EFF;
+                    background-color: #8A2BE2;
                 }
 
                 .logoCenteralignment {
                     .icons {
-                        background-color: #014EFF;
+                        background-color: #8A2BE2;
                         color: #fff;
                     }
                 }
@@ -372,7 +372,7 @@
                     &:hover {
                         svg {
                             path {
-                                fill: #014EFF;
+                                fill: #8A2BE2;
                                 transition: .3s ease-in-out;
 
                             }
@@ -496,7 +496,7 @@
                 }
 
                 a {
-                    color: #014EFF;
+                    color: #8A2BE2;
                     cursor: pointer;
                 }
             }
@@ -530,7 +530,7 @@
                     height: 14px;
 
                     path {
-                        fill: #014EFF;
+                        fill: #8A2BE2;
                     }
                 }
             }
