@@ -18,6 +18,10 @@
       img {
         height: 60px;
         display: block;
+
+        @include breakpoint("sm-max") {
+          height: 40px;
+        }
       }
 
 
@@ -138,7 +142,7 @@
         height: 20px;
 
         path {
-          fill: #014eff;
+          fill: #8A2BE2;
         }
       }
     }

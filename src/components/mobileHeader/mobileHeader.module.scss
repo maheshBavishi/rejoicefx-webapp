@@ -49,7 +49,7 @@
     }
 
     .mobileBodyStyle {
-        padding: 30px 20px;
+        padding: 10px 20px;
         max-height: calc(100vh - 75px);
         overflow: auto;
 
@@ -75,29 +75,45 @@
             &.hide {
                 max-height: 0px;
                 overflow: hidden;
-                transition: .3s ease-in-out;
+                transition: .4s cubic-bezier(0.4, 0, 0.2, 1);
             }
 
             &.show {
-                max-height: 100vh;
+                max-height: 1000px;
                 overflow: hidden;
-                transition: .3s ease-in-out;
+                transition: .4s cubic-bezier(0.4, 0, 0.2, 1);
             }
 
             .spacer {
-                padding: 30px 30px 0 30px;
+                padding: 10px 20px 20px 20px;
 
-                a {
-                    font-size: 20px;
-                    font-weight: 600;
-                    display: block;
-                    color: #0F0F1A;
-                    cursor: pointer;
-                    padding: 0 0 20px 0;
+                .subItemWrapper {
+                    padding: 10px;
+
+                    a {
+                        padding: 0;
+                        text-decoration: none;
+                        display: block;
+                    }
+
+                    .subItemTitle {
+                        font-size: 18px;
+                        font-weight: 700;
+                        color: #0F0F1A;
+                        opacity: .8;
+                        margin-bottom: 4px;
+                    }
+
+                    .subItemDescription {
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #666;
+                        line-height: 1.4;
+                    }
                 }
 
-                a:last-child {
-                    padding: 0;
+                .subItemWrapper:last-child {
+                    margin-bottom: 0;
                 }
             }
         }
@@ -106,19 +122,39 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-
+            cursor: pointer;
 
             a {
                 display: block;
-                font-size: 26px;
+                font-size: 22px;
                 color: #0F0F1A;
-                font-weight: 600;
+                font-weight: 700;
+                transition: color 0.3s ease;
+            }
+
+            &:hover {
+                a {
+                    color: #8A2BE2;
+                }
             }
 
             svg {
-                width: 20px;
-                height: 20px;
+                width: 18px;
+                height: 18px;
+
+                path {
+                    fill: #8A2BE2;
+                }
             }
+        }
+    }
+
+    .closeIcon {
+        cursor: pointer;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: rotate(90deg);
         }
     }
 }
