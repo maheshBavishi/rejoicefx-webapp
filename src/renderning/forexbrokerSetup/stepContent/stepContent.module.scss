@@ -1,0 +1,198 @@
+@import '../../../scss/mixins/index.scss';
+
+.stepContent {
+    padding: 100px 0;
+    background-color: #fafafa;
+
+    @include breakpoint("sm-max") {
+        padding: 60px 0;
+    }
+
+    .header {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto 60px;
+
+        .subTitle {
+            font-size: 14px;
+            font-weight: 600;
+            color: #8A2BE2;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        h2 {
+            @include heading1;
+            color: var(--Foundation-Blue-Dark, #0B0B14);
+            margin-bottom: 20px;
+
+            span {
+                color: #8A2BE2;
+            }
+        }
+
+        .description {
+            font-size: 16px;
+            color: var(--Foundation-Grey-grey-400, #75758A);
+            line-height: 1.6;
+        }
+    }
+
+    .timelineWrapper {
+        position: relative;
+        margin-bottom: 80px;
+
+        @include breakpoint("sm-max") {
+            display: none; // You may want a vertical timeline for mobile instead
+        }
+
+        .line {
+            position: absolute;
+            top: 24px; // Half of numberBox height
+            left: 5%;
+            right: 5%;
+            height: 1px;
+            background-color: #e0e0e0;
+            z-index: 1;
+        }
+
+        .timelineItems {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            z-index: 2;
+        }
+
+        .timelineItem {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            flex: 1;
+            padding: 0 10px;
+
+            .numberBox {
+                width: 48px;
+                height: 48px;
+                background-color: #111;
+                color: #fff;
+                font-size: 18px;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 12px;
+                margin-bottom: 16px;
+            }
+
+            h3 {
+                font-size: 16px;
+                font-weight: 700;
+                color: #111;
+                margin-bottom: 6px;
+            }
+
+            p {
+                font-size: 13px;
+                color: #666;
+                line-height: 1.4;
+            }
+        }
+    }
+
+    .cardsGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+
+        @include breakpoint("md-max") {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint("sm-max") {
+            grid-template-columns: 1fr;
+        }
+
+        .card {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 16px;
+            padding: 32px;
+            transition: all 0.3s ease;
+
+            &:hover {
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+                transform: translateY(-5px);
+            }
+
+            .cardHeader {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                margin-bottom: 24px;
+
+                .iconWrapper {
+                    width: 44px;
+                    height: 44px;
+                    background-color: #ffeeee;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 10px;
+                }
+
+                h3 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: #111;
+                    margin: 0;
+                }
+            }
+
+            .cardBody {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+
+                .stepItem {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 12px;
+
+                    .stepNum {
+                        width: 24px;
+                        height: 24px;
+                        background-color: #111;
+                        color: #fff;
+                        font-size: 12px;
+                        font-weight: 600;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        flex-shrink: 0;
+                        margin-top: 2px;
+                    }
+
+                    .stepText {
+                        h4 {
+                            font-size: 15px;
+                            font-weight: 700;
+                            color: #111;
+                            margin: 0 0 4px 0;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            color: #666;
+                            margin: 0;
+                            line-height: 1.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
