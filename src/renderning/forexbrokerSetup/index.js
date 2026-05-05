@@ -4,6 +4,7 @@ import WhatWeOffer from './whatWeOffer'
 import WhyChooseRejoicefx from './whyChooseRejoicefx'
 import ForexbrokerSetupHowitWork from './forexbrokerSetupHowitWork'
 import Slidersection from '../home/slidersection'
+import LicenseSection from './licenseSection'
 
 export default function ForexbrokerSetup() {
     return (
@@ -12,6 +13,7 @@ export default function ForexbrokerSetup() {
             <Slidersection />
             <WhatWeOffer />
             <WhyChooseRejoicefx />
+            <LicenseSection />
             <ForexbrokerSetupHowitWork />
         </div>
     )

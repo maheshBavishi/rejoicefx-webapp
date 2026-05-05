@@ -106,7 +106,7 @@
         &:hover {
           svg {
             path {
-              fill: #014eff;
+              fill: #8A2BE2;
               transition: 0.3s ease-in-out;
             }
           }
@@ -187,7 +187,7 @@
   &:hover,
   &.menuActive {
     background: #e6edff;
-    color: #014eff;
+    color: #8A2BE2;
   }
 }
 
@@ -259,7 +259,7 @@
 
         span {
           display: block;
-          color: var(--Foundation-Blue-Normal, #014eff);
+          color: var(--Foundation-Blue-Normal, #8A2BE2);
           font-size: 16px;
           font-style: normal;
           font-weight: 500;

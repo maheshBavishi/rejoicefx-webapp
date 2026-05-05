@@ -88,7 +88,7 @@ export default function WhatWeOffer() {
                 </div>
                 <div className={styles.title}>
                     <h2>
-                        Start Your Forex Brokerage Journey with RejoiceFx
+                        Start Your Forex Brokerage Journey with GENXEL
                     </h2>
                 </div>
                 <div className={styles.grid}>
