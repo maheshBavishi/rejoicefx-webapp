@@ -1,139 +1,217 @@
 @import '../../../scss/mixins/index.scss';
 
 .requirementsSection {
-    padding: 120px 0;
-    @include breakpoint("md-max") {
-        padding: 60px 0;
-    }
-    .btnCenter {
-        display: flex;
-        padding: 0 0 16px 0;
-        align-items: center;
-        justify-content: center;
+    padding: 100px 0;
 
-    }
-
-    .title {
-        padding: 0 0 60px 0;
+    .header {
+        text-align: center;
+        max-width: 900px;
+        margin: 0 auto 60px;
 
         h2 {
-            text-align: center;
             @include heading1;
-            color: #0B0B14;
+            color: #1e293b;
+            margin-bottom: 24px;
+
+
+        }
+
+        p {
+            font-size: 18px;
+            color: #64748b;
+            line-height: 1.6;
         }
     }
 
-    .box {
-        border-radius: 34px;
-        background-color: rgba(241, 242, 244, .7);
-        padding: 70px 40px;
+    .mainBox {
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 40px;
+        border: 1px solid #e2e8f0;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 40px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 
         @include breakpoint("sm-max") {
-            border-radius: 12px;
-            padding: 30px 0;
+            padding: 24px;
+        }
+    }
+
+    .reqCard {
+        display: flex;
+        gap: 30px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #f1f5f9;
+
+        &:last-child {
+            padding-bottom: 0;
+            border-bottom: none;
         }
 
+        @include breakpoint("sm-max") {
+            flex-direction: column;
+            gap: 20px;
+        }
 
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr 600px;
-            gap: 60px;
+        .iconBox {
+            flex-shrink: 0;
 
-            @include breakpoint("md-max") {
-                grid-template-columns: 1fr;
-                gap: 40px;
+            .iconCircle {
+                width: 80px;
+                height: 80px;
+                background: rgba(138, 43, 226, 0.08);
+                color: #8A2BE2;
+                border-radius: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
+        }
 
-            .document {
-                h3 {
-                    color: var(--Foundation-Blue-Dark, #0B0B14);
-                    font-size: 24px;
-                    font-style: normal;
-                    font-weight: 800;
-                    margin: 0 0 30px 0;
-                    line-height: normal;
-                    letter-spacing: -0.28px;
+        .content {
+            flex: 1;
+
+            .titleRow {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                margin-bottom: 12px;
+
+                .stepNum {
+                    background: #8A2BE2;
+                    color: white;
+                    width: 28px;
+                    height: 28px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 14px;
+                    font-weight: 700;
                 }
 
-                .twoCol {
+                h3 {
+                    font-size: 22px;
+                    font-weight: 700;
+                    color: #0f172a;
+                }
+            }
+
+            p {
+                font-size: 16px;
+                color: #64748b;
+                line-height: 1.6;
+            }
+
+            .listWrapper {
+                margin-top: 20px;
+                padding: 20px;
+                background: #f8fafc;
+                border-radius: 8px;
+                border-left: 4px solid #8A2BE2;
+
+                ul {
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
-                    gap: 40px;
+                    gap: 10px;
+                    margin-bottom: 15px;
 
                     @include breakpoint("sm-max") {
                         grid-template-columns: 1fr;
-                        gap: 20px;
                     }
 
-                    .twoColItems {
-                        .iconText {
-                            display: grid;
-                            grid-template-columns: 24px 1fr;
-                            gap: 14px;
-                            padding: 0 0 24px 0 ;
+                    li {
+                        font-size: 15px;
+                        color: #1e293b;
+                        position: relative;
+                        padding-left: 20px;
 
-                            span {
-                                display: block;
-                                color: var(--foundation-white-dark-active, #737373);
-                                font-size: 18px;
-                                font-style: normal;
-                                font-weight: 500;
-                                line-height: normal;
-
-                                @include breakpoint("sm-max") {
-                                    @include font14;
-                                }
-                            }
+                        &::before {
+                            content: '•';
+                            color: #8A2BE2;
+                            position: absolute;
+                            left: 0;
+                            font-weight: bold;
                         }
                     }
                 }
-            }
 
-            .firstText {
-                padding: 0 0 30px 0;
-
-                h3 {
-                    color: var(--Foundation-Blue-Dark, #0B0B14);
-                    font-size: 24px;
-                    font-style: normal;
-                    font-weight: 800;
-                    margin: 0 0 8px 0;
-                    line-height: normal;
-                    letter-spacing: -0.28px;
-                }
-
-                p {
-                    color: var(--foundation-white-dark-active, #737373);
-                    font-size: 18px;
-                    margin: 0 0 14px 0;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-
-                    @include breakpoint("sm-max") {
-                        @include font14;
-                    }
-
-                    span {
-                        color: #0F0F1A;
-                        font-weight: 600;
-                    }
+                .note {
+                    font-size: 13px;
+                    font-style: italic;
+                    color: #94a3b8;
+                    margin: 0;
                 }
             }
         }
+    }
 
-        .img {
-            width: 100%;
-            position: relative;
-            border-radius: 24px;
-            height: 600px;
-            @include breakpoint("sm-max") {
-                height: 320px;
+    .notesBox {
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 40px;
+        border: 1px solid #e2e8f0;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+
+        @include breakpoint("sm-max") {
+            padding: 24px;
+        }
+
+        .notesHeader {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #8A2BE2;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #f1f5f9;
+            padding-bottom: 15px;
+
+            h3 {
+                font-size: 20px;
+                font-weight: 700;
             }
-            img {
-                border-radius: 24px;
-                @include breakpoint("sm-max") {
-                    border-radius: 12px;
+        }
+
+        .notesGrid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+
+            @include breakpoint("md-max") {
+                grid-template-columns: 1fr;
+            }
+
+            .noteItem {
+                display: flex;
+                gap: 15px;
+
+                .noteIcon {
+                    flex-shrink: 0;
+                    width: 44px;
+                    height: 44px;
+                    background: rgba(138, 43, 226, 0.08);
+                    color: #8A2BE2;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .noteText {
+                    h4 {
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: #1e293b;
+                        margin-bottom: 6px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        color: #64748b;
+                        line-height: 1.5;
+                    }
                 }
             }
         }

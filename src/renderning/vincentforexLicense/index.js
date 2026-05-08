@@ -18,8 +18,8 @@ export default function VincentforexLicense() {
       <VincentforexLicenseProcess />
       <RequirementsSectionSt />
       <Explicit />
-      <TrustedPartners />
-      <VincentOverview />
+      {/* <TrustedPartners />
+      <VincentOverview /> */}
     </div>
   )
 }

@@ -65,6 +65,10 @@
 .cardsSection {
   padding: 80px 0;
 
+  @include breakpoint("sm-max") {
+    display: none;
+  }
+
   .grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -135,7 +139,9 @@
 
   @include breakpoint("sm-max") {
     padding: 20px;
-    border-width: 3px;
+    margin: 60px 0 0 0;
+    border-width: 2px;
+    border-radius: 12px;
   }
 
   .tableHeader {

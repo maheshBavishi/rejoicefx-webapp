@@ -148,11 +148,20 @@ export default function Header() {
   const [header, setHeader] = useState(false);
   const { showLogin, setShowLogin } = useAppContext();
   const [showMenu, setShowMenu] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const { isUserLoggedIn, setIsUserLoggedIn, user, setUser } = useAppContext();
 
   const menuRef = useRef(null);
   const hoverTimeout = useRef(null);
   const router = useRouter();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   useEffect(() => {
     if (header) {
@@ -198,7 +207,7 @@ export default function Header() {
 
   return (
     <>
-      <header className={styles.header}>
+      <header className={classNames(styles.header, { [styles.scrolled]: isScrolled })}>
         <div className="container">
           <div className={styles.headerAlignment}>
 

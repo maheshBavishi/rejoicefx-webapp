@@ -100,9 +100,9 @@ export default function Herobanner() {
                 <Button text="Get Started" icon={<RightLgArrow />} />
               </Link>
             </div>
-            <div className={styles.secButton}>
+            {/* <div className={styles.secButton}>
               <Button text="Try For Free" icon={<RightBlackLg />} outline={true} />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

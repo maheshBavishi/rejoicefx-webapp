@@ -8,14 +8,14 @@ export default function VincentforexLicenseBanner() {
       <div className="container-lg">
         <div className={styles.mauritiusForexLicenseBanner}>
           <div className={styles.buttonCenter}>
-            <CommonButton text="Mauritius Forex License" />
+            <CommonButton text="Saint Lusia" />
           </div>
           <h2>
-            St. Vincent Company Formation &
+            Saint Lusia Company Formation &
             Forex License
           </h2>
           <p>
-            Start your forex business in St. Vincent with strict confidentiality
+            Start your forex business in Saint Lusia with strict confidentiality
           </p>
         </div>
       </div>

@@ -17,7 +17,7 @@
     @include breakpoint("sm-max") {
         border-radius: 12px;
         padding: 60px 20px;
-        height: 650px;
+        height: auto;
     }
 
 
@@ -78,6 +78,11 @@
     .sliderText {
         padding: 20px 0 20px 0;
 
+        @include breakpoint("sm-max") {
+            padding: 40px 0 0 0;
+
+        }
+
         p {
             color: #595959;
             text-align: center;
@@ -91,6 +96,7 @@
             @include breakpoint("sm-max") {
                 font-size: 14px;
                 line-height: 26px;
+                min-height: 130px;
             }
         }
 

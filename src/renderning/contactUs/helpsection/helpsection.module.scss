@@ -24,6 +24,10 @@
 
         .griditems:last-child {
             padding: 60px 40px;
+
+            @include breakpoint("sm-max") {
+                padding: 30px 16px;
+            }
         }
 
         .griditems:first-child {
