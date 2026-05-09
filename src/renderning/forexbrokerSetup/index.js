@@ -12,10 +12,11 @@ export default function ForexbrokerSetup() {
         <div>
             <ForexbrokerSetupBanner />
             <Slidersection />
+            <LicenseSection />
+            <StepContent />
             <WhatWeOffer />
             <WhyChooseRejoicefx />
-            <StepContent />
-            <LicenseSection />
+
             <ForexbrokerSetupHowitWork />
         </div>
     )

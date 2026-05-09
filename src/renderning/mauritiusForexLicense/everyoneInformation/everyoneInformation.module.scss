@@ -1,0 +1,148 @@
+@import '../../../scss/mixins/index.scss';
+
+.everyoneInformationAlignment {
+    padding: 100px 0;
+    margin: 0 0 100px 0;
+    background-color: rgba(241, 242, 244, 0.7);
+
+    @include breakpoint("md-max") {
+        padding: 60px 0;
+        margin: 0 0 60px 0;
+    }
+
+    .sectionHeader {
+        text-align: center;
+        max-width: 850px;
+        margin: 0 auto 60px;
+
+        span {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            color: #8A2BE2; // Using an accent color from the design image
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        h2 {
+            @include heading1;
+            color: #0b0b14;
+            margin-bottom: 20px;
+
+            span {
+                color: #8A2BE2; // Theme color from design
+                display: inline;
+                text-transform: none;
+                letter-spacing: normal;
+                margin-bottom: 0;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            color: #737373;
+            line-height: 1.6;
+
+            @include breakpoint("sm-max") {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+
+        @include breakpoint("lg-max") {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint("sm-max") {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .card {
+            background: #ffffff;
+            border: 1px solid #f0f0f0;
+            border-radius: 20px;
+            padding: 35px;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 30px rgba(138, 43, 226, 0.08);
+                border-color: rgba(138, 43, 226, 0.2);
+
+                .iconBox {
+                    background-color: #8A2BE2;
+                    color: #fff;
+                }
+            }
+
+            .iconBox {
+                width: 60px;
+                height: 60px;
+                border-radius: 12px;
+                background-color: #fef0e9; // Light orange background from design
+                color: #8A2BE2; // Orange color from design
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 25px;
+                transition: all 0.3s ease;
+
+                // Adjusting to theme color as requested by "api theme according"
+                background-color: rgba(138, 43, 226, 0.08);
+                color: #8A2BE2;
+            }
+
+            h3 {
+                font-size: 24px;
+                font-weight: 600;
+                color: #0b0b14;
+                margin-bottom: 20px;
+
+                @include breakpoint("sm-max") {
+                    font-size: 20px;
+                }
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 12px;
+                    margin-bottom: 12px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    .checkIcon {
+                        color: #ff4d00; // Orange color from design
+                        margin-top: 4px;
+                        flex-shrink: 0;
+
+                        // Theme color
+                        color: #8A2BE2;
+                    }
+
+                    span {
+                        font-size: 16px;
+                        color: #555;
+                        line-height: 1.4;
+                    }
+                }
+            }
+        }
+    }
+}

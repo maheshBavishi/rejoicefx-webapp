@@ -7,6 +7,8 @@ import TrustedPartners from './explicit/trustedPartners'
 import Overview from './explicit/overview'
 import React, { useEffect } from 'react'
 import Slidersection from '../home/slidersection'
+import EveryoneInformation from './everyoneInformation'
+import FAQSection from './faqSection'
 
 export default function MauritiusForexLicense() {
   useEffect(() => {
@@ -21,11 +23,13 @@ export default function MauritiusForexLicense() {
       <MauritiusForexLicenseBanner />
       <Slidersection />
       <CompanyFormation />
+      <EveryoneInformation />
       <Process />
       <RequirementsSection />
       {/* <Explicit/> */}
-      <TrustedPartners />
-      <Overview />
+      {/* <TrustedPartners />
+      <Overview /> */}
+      <FAQSection />
     </div>
   )
 }

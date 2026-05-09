@@ -12,7 +12,7 @@ export default function CompanyFormation() {
       <div className="container">
         <div className={styles.grid}>
           <div className={styles.griditems}>
-            <Image src={Image4} layout="fill" />
+            <img src={Image4} layout="fill" />
           </div>
           <div className={styles.griditems}>
             <div>

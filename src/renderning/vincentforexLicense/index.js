@@ -8,6 +8,7 @@ import Overview from '../mauritiusForexLicense/explicit/overview'
 import RequirementsSectionSt from './RequirementsSectionSt'
 import VincentOverview from './vincentOverview'
 import Slidersection from '../home/slidersection'
+import FaqSection from './faqSection'
 
 export default function VincentforexLicense() {
   return (
@@ -20,6 +21,7 @@ export default function VincentforexLicense() {
       <Explicit />
       {/* <TrustedPartners />
       <VincentOverview /> */}
+      <FaqSection />
     </div>
   )
 }
