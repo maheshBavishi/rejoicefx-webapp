@@ -5,8 +5,21 @@ import RightLgArrow from '@/components/icons/rightLgArrow';
 import Link from 'next/link';
 import toast from 'react-hot-toast';
 import axios from 'axios';
+const servicesList = [
+    "Forex CRM",
+    "Forex Prop Firm CRM",
+    "MAM/PAMM/Copy Trading",
+    "Forex Broker Setup",
+    "MT4/MT5 Setup",
+    "RMS",
+    "Liquidity Provider Setup",
+    "AI/ML Services",
+    "PSP",
+    "Options"
+];
+
 export default function Helpsection() {
-    const [contactData, setContactData] = useState({ country: "Afghanistan" });
+    const [contactData, setContactData] = useState({ country: "Afghanistan", services: [] });
     const [error, setError] = useState({});
     const [isLoading, setIsLoading] = useState(false);
     const disposableDomains = ["soebing", "yopmail", "sharklasers", "guerrillamail", "getairmail", "grr", "guerrillamailblock", "pokemail", "spam4", "cazlq", "sloveniakm", "mybx", "memsg", "matra", "maildrop"];
@@ -72,31 +85,24 @@ export default function Helpsection() {
 
                 setIsLoading(true)
 
-                const newData = {
-                    text: `Name:${contactData?.firstName}\n Email:${contactData?.email}\n Country:${contactData?.country} Phone Number:${contactData?.phone}\n Description:${contactData?.message}`,
-                };
-                await axios(`https://hooks.slack.com/services/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`, {
-                    method: "POST",
-                    data: JSON.stringify(newData),
-                    headers: {
-                        "Content-type": "application/x-www-form-urlencoded",
-                    },
-                })
-                    .then((res) => {
-                        setIsLoading(false)
-                        toast.success("Thank you for contacting us. We will get back to you soon.");
-                        setContactData({
-                            firstName: "",
-                            email: "",
-                            phone: "",
-                            country: "",
-                            message: "",
-                        });
-                    })
-                    .catch((err) => {
-                        toast.error("Something went wrong");
-                        setIsLoading(false)
+                try {
+
+                    await axios.post('/api/contact', contactData);
+
+                    setIsLoading(false)
+                    toast.success("Thank you for contacting us. We will get back to you soon.");
+                    setContactData({
+                        firstName: "",
+                        email: "",
+                        phone: "",
+                        country: "",
+                        message: "",
+                        services: [],
                     });
+                } catch (err) {
+                    toast.error("Something went wrong");
+                    setIsLoading(false)
+                }
             }
         }
     };
@@ -131,7 +137,7 @@ export default function Helpsection() {
                             {/* call information */}
                             <div className={styles.infoBlock}>
                                 <div className={styles.infoIcon}>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l2.27-2.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l2.27-2.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
                                 </div>
                                 <div className={styles.infoContent}>
                                     <span>Phone Number</span>
@@ -355,6 +361,33 @@ export default function Helpsection() {
                                     }}
                                     onKeyPress={bindInput}
                                 />
+                            </div>
+                            <div className={styles.servicesSection}>
+                                <label>Services You Are Interested In</label>
+                                <div className={styles.servicesList}>
+                                    {servicesList.map((service, index) => (
+                                        <div
+                                            key={index}
+                                            className={`${styles.servicePill} ${contactData.services?.includes(service) ? styles.active : ''}`}
+                                            onClick={() => {
+                                                const currentServices = contactData.services || [];
+                                                if (currentServices.includes(service)) {
+                                                    setContactData({
+                                                        ...contactData,
+                                                        services: currentServices.filter(s => s !== service)
+                                                    });
+                                                } else {
+                                                    setContactData({
+                                                        ...contactData,
+                                                        services: [...currentServices, service]
+                                                    });
+                                                }
+                                            }}
+                                        >
+                                            {service}
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
                             <div className={styles.input}>
                                 <label>Message <span>* {error?.message}</span></label>

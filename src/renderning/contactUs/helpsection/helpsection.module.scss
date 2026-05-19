@@ -157,7 +157,54 @@
                 padding: 0 0 30px 0;
             }
 
+            .servicesSection {
+                grid-column: span 2;
+                @include breakpoint("sm-max") {
+                    grid-column: auto;
+                }
 
+                label {
+                    color: var(--Foundation-Blue-Dark, #0B0B14);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: -0.2px;
+                    display: block;
+                    margin-bottom: 12px;
+                }
+
+                .servicesList {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 12px;
+                    
+                    .servicePill {
+                        padding: 10px 20px;
+                        border-radius: 30px;
+                        border: 1px solid var(--foundation-white-normal-active, #CCC);
+                        color: var(--foundation-white-dark-active, #0B0B14);
+                        font-family: "DM Sans", sans-serif;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        cursor: pointer;
+                        transition: .3s ease-in-out;
+                        user-select: none;
+                        
+                        &:hover {
+                            border-color: #8A2BE2;
+                            color: #8A2BE2;
+                        }
+                        
+                        &.active {
+                            background: #8A2BE2;
+                            border-color: #8A2BE2;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
 
             .input:last-child {
                 grid-column: span 2;
