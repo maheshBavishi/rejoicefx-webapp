@@ -116,29 +116,20 @@ export default function Footer() {
                   <Link href="/">RMS</Link>
                   <Link href="/">Liquidity Provider's Setup</Link>
                   <Link href="/ai-development">AI/ML Services</Link>
+                  <Link href="/algo-bot">AI bot development</Link>
+                  <Link href="/psp-partners">PSP & Payment Gateway Partners</Link>
+                </div>
+                <div>
+                  <div className={styles.subtitle}>
+                    <h3>Company & Resources</h3>
+                  </div>
+                  <Link href="/about-us">About Us</Link>
+                  <Link href="/news">News</Link>
+                  <Link href="/">Case Studies</Link>
                 </div>
               </div>
             </div>
-            <div className={styles.footerGridItems}>
-              <div className={styles.lastText}>
-                <h3>Get started to up your business with personal GENXEL</h3>
-              </div>
-              {/* <form onSubmit={functionPostContact}> */}
-              <div className={styles.input}>
-                <input type="email" placeholder="Enter your email address" value={contactData?.email} onChange={(e) => {
-                  setContactData({
-                    ...contactData,
-                    email: e.target.value,
-                  });
-                  setError({ ...error, email: "" });
-                }} />
-                <span style={{ fontSize: "14px", color: "red" }}>{error?.email}</span>
-              </div>
-              <div className={styles.secButton} onClick={functionPostContact}>
-                <Button text="Submit" outline={true} icon={<RightBlackLg />} />
-              </div>
-              {/* </form> */}
-            </div>
+
           </div>
           <div className={styles.copyRight}>
             <p>© 2026 GENXEL. All rights reserved.</p>

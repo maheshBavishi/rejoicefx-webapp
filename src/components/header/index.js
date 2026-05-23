@@ -74,6 +74,11 @@ const menuItems = [
         description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
         redirectLink: "/algo-bot",
       },
+      {
+        title: "PSP & Payment Gateway Partners",
+        description: "Powering Seamless Transactions for Your Brokerage",
+        redirectLink: "/psp-partners",
+      },
 
     ],
   },

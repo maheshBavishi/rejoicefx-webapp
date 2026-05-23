@@ -5,16 +5,16 @@
 
     .footerGrid {
         display: grid;
-        grid-template-columns: 380px 1fr 420px;
-        gap: 50px;
+        grid-template-columns: 380px 1fr;
+        gap: 100px;
         padding: 0 0 40px 0;
         border-bottom: 1px solid #BFBFBF;
 
-        @include breakpoint("md-max"){
+        @include breakpoint("md-max") {
             grid-template-columns: 1fr 1fr;
         }
 
-        @include breakpoint("sm-max"){
+        @include breakpoint("sm-max") {
             grid-template-columns: 1fr;
         }
 
@@ -81,20 +81,22 @@
         }
 
         .footerGridItems {
-        
-        .logo {
-            position: relative;
-            width: 200px;
-            cursor: pointer;
-            height: 66px;
-            @include breakpoint("sm-max") {
-                width: 120px;
-                height: 30px;
+
+            .logo {
+                position: relative;
+                width: 200px;
+                cursor: pointer;
+                height: 66px;
+
+                @include breakpoint("sm-max") {
+                    width: 120px;
+                    height: 30px;
+                }
             }
-        }
+
             .menuCol {
                 display: grid;
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(3, 1fr);
                 gap: 20px;
 
                 a {
@@ -103,9 +105,33 @@
                     color: var(--Foundation-Blue-Normal, #0F0F1A);
                     font-size: 16px;
                     font-style: normal;
+                    width: fit-content;
                     font-weight: 400;
                     padding: 0 0 16px 0;
                     line-height: normal;
+                    position: relative;
+                    transition: all 0.3s ease-in-out;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 0;
+                        height: 2px;
+                        bottom: 12px;
+                        left: 0;
+                        background-color: #8A2BE2;
+                        /* Brand color */
+                        transition: width 0.3s ease-in-out;
+                    }
+
+                    &:hover {
+                        color: #8A2BE2;
+                        transform: translateX(5px);
+
+                        &::before {
+                            width: 100%;
+                        }
+                    }
                 }
             }
 
