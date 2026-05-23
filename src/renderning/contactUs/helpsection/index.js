@@ -15,7 +15,6 @@ const servicesList = [
     "Liquidity Provider Setup",
     "AI/ML Services",
     "PSP",
-    "Options"
 ];
 
 export default function Helpsection() {
