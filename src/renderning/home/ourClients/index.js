@@ -43,7 +43,7 @@ const testimonials = [
     },
     {
         text: "We significantly improved our client management and internal workflows after implementing GENXEL. Their CRM and automation tools brought structure and efficiency to our operations.",
-        author: "Operations Team, Juno Markets"
+        author: "Operations Team, Neuvera"
     },
     {
         text: "Before GENXEL, managing multiple systems was a challenge. Now everything is centralized, making it easier for our team to operate and scale without technical bottlenecks.",
@@ -55,7 +55,7 @@ const testimonials = [
     },
     {
         text: "The all-in-one ecosystem provided by GENXEL helped us reduce operational overhead. From backend systems to automation, everything works seamlessly together.",
-        author: "Operations Team, Auxilium FX"
+        author: "Operations Team, Foreaxa"
     }
 ];
 

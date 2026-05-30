@@ -5,7 +5,7 @@
 
     .footerGrid {
         display: grid;
-        grid-template-columns: 380px 1fr;
+        grid-template-columns: 450px 1fr;
         gap: 100px;
         padding: 0 0 40px 0;
         border-bottom: 1px solid #BFBFBF;
@@ -16,6 +16,7 @@
 
         @include breakpoint("sm-max") {
             grid-template-columns: 1fr;
+            gap: 40px;
         }
 
         .secButton {
@@ -99,6 +100,10 @@
                 grid-template-columns: repeat(3, 1fr);
                 gap: 20px;
 
+                @include breakpoint("sm-max") {
+                    grid-template-columns: 1fr 1fr;
+                }
+
                 a {
                     display: block;
                     cursor: pointer;
@@ -154,8 +159,17 @@
                 gap: 30px;
                 padding: 40px 0 0 0;
 
+                @include breakpoint("sm-max") {
+                    grid-template-columns: 1fr;
+                    gap: 20px;
+                }
+
                 .twoColItems:last-child {
                     grid-column: span 2;
+
+                    @include breakpoint("sm-max") {
+                        grid-column: auto;
+                    }
                 }
 
                 .twoColItems {

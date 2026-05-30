@@ -83,7 +83,7 @@ export default function Footer() {
               <div className={styles.twoCol}>
                 <div className={styles.twoColItems}>
                   <p>Email</p>
-                  <a href="mailto:yashmakavana@gmail.com">yashmakavana@gmail.com</a>
+                  <a href="mailto:enquiry@genxeltechnology.com">enquiry@genxeltechnology.com</a>
                 </div>
                 <div className={styles.twoColItems}>
                   <p>Phone Number</p>

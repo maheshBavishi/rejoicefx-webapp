@@ -130,7 +130,7 @@ export default function Helpsection() {
                                 </div>
                                 <div className={styles.infoContent}>
                                     <span>Email Us</span>
-                                    <a href='mailto:yashmakavana@gmail.com'>yashmakavana@gmail.com</a>
+                                    <a href='mailto:enquiry@genxeltechnology.com'>enquiry@genxeltechnology.com</a>
                                 </div>
                             </div>
                             {/* call information */}
