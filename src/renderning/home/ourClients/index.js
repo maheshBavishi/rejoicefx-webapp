@@ -46,6 +46,7 @@ const testimonials = [
         author: "Operations Team, Neuvera"
     },
     {
+        
         text: "Before GENXEL, managing multiple systems was a challenge. Now everything is centralized, making it easier for our team to operate and scale without technical bottlenecks.",
         author: "Management Team, IncredFX"
     },
