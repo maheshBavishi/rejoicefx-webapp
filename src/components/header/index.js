@@ -40,9 +40,9 @@ const menuItems = [
         redirectLink: "/mam-pamm-social-trading",
       },
       {
-        title: "Mobile App Development",
+        title: "Mobile App For CRM",
         description: "Build Powerful Forex & Trading Mobile Apps for Modern Brokers.",
-        redirectLink: "/mobile-app-development",
+        redirectLink: "/mobile-app-for-crm",
       },
     ],
   },

@@ -14,7 +14,7 @@ export default function MobileAppDevelopment() {
             <AboutSection />
             <FeatureSection />
             <WhychooseUs />
-            <Platforms />
+            {/* <Platforms /> */}
             <BenefitsUi />
             <FaqSection />
         </div>

@@ -106,6 +106,7 @@ export default function Footer() {
                   <Link href="/forex-prop-firm-crm">Forex Prop Firm CRM</Link>
                   <Link href="/copy-trading-platform">Copy Trading</Link>
                   <Link href="/mam-pamm-social-trading">MAM/PAMM Social Trading</Link>
+                  <Link href="/mobile-app-for-crm">Mobile App For CRM</Link>
                 </div>
                 <div>
                   <div className={styles.subtitle}>

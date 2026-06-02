@@ -10,7 +10,7 @@ export default function Hero() {
                         <CommonButton text="Forex & Trading Businesses" />
                     </div>
                     <h2>
-                        Mobile App Development for Forex & Trading Businesses
+                        Mobile App Development for Forex CRM & Trading Businesses
                     </h2>
                     <p>
                         Build Powerful Forex & Trading Mobile Apps for Modern Brokers

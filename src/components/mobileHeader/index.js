@@ -28,8 +28,8 @@ const menuItems = [
         redirectLink: "/mam-pamm-social-trading",
       },
       {
-        title: "Mobile App Development",
-        redirectLink: "/mobile-app-development",
+        title: "Mobile App For CRM",
+        redirectLink: "/mobile-app-for-crm",
       },
     ],
   },
