@@ -1,0 +1,46 @@
+@import '../../../scss/mixins/index.scss';
+
+.aboutSection {
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+    /* Inheriting from global theme or allowing default */
+}
+
+.contentWrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    letter-spacing: -0.02em;
+    @include heading-font;
+
+    @media (max-width: 768px) {
+        font-size: 2.25rem;
+    }
+}
+
+.highlight {
+    /* Using theme primary color if available */
+    color: var(--primary-color, #8A2BE2);
+}
+
+.description {
+    font-size: 20px;
+    line-height: 32px;
+    color: #595959;
+    opacity: 0.8;
+    font-weight: 400;
+
+    @media (max-width: 768px) {
+        font-size: 1rem;
+    }
+}

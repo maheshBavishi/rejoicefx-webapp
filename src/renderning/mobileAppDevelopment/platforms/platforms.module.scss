@@ -1,0 +1,93 @@
+@import '../../../scss/mixins/index.scss';
+
+.platforms {
+  padding: 100px 0;
+  background: var(--page-background-secondary, #fafafa);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 24px 0;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--palette-text-primary-color, #111);
+  @include heading-font;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+
+  @media (max-width: 992px) {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px 32px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-bottom: 4px solid transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+    border-bottom-color: var(--primary-color, #8A2BE2);
+
+    .iconWrapper {
+      background: var(--primary-color, #8A2BE2);
+      color: #ffffff;
+      transform: scale(1.1) rotate(5deg);
+    }
+  }
+}
+
+.iconWrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(138, 43, 226, 0.08);
+  color: var(--primary-color, #8A2BE2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+  transition: all 0.4s ease;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--palette-text-primary-color, #111);
+  @include heading-font;
+}
+
+.cardDescription {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #595959;
+  margin: 0;
+}

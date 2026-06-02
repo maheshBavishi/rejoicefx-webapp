@@ -39,6 +39,11 @@ const menuItems = [
         description: "Multi-account management and social trading solutions for fund managers.",
         redirectLink: "/mam-pamm-social-trading",
       },
+      {
+        title: "Mobile App Development",
+        description: "Build Powerful Forex & Trading Mobile Apps for Modern Brokers.",
+        redirectLink: "/mobile-app-development",
+      },
     ],
   },
   {

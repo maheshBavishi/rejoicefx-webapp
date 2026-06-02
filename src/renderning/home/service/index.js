@@ -4,6 +4,8 @@ const Image1 = '/assets/images/img1.png';
 const Image2 = '/assets/images/img2.png';
 const Image3 = '/assets/images/img3.png';
 const Image4 = '/assets/images/img4.png';
+const Image9 = '/assets/images/9.png';
+const Image8 = '/assets/images/8.png';
 const LiquidityImage = '/assets/images/img4.png';
 const AiMlImage = '/assets/images/img5.png';
 const Image5 = '/assets/images/algo.png';
@@ -42,6 +44,18 @@ const servicesData = [
     description: "Cutting-edge artificial intelligence and machine learning solutions for trading.",
     redirectLink: "/ai-development",
     imgSrc: AiMlImage,
+  },
+  {
+    title: "AI bot development",
+    description: "It is a long established fact that a reader will be distracted by the readable content.",
+    redirectLink: "/algo-bot",
+    imgSrc: Image8,
+  },
+  {
+    title: "PSP & Payment Gateway Partners",
+    description: "Powering Seamless Transactions for Your Brokerage.",
+    redirectLink: "/psp-partners",
+    imgSrc: Image9,
   },
 ];
 
