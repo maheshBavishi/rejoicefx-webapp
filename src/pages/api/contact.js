@@ -24,7 +24,7 @@ export default async function handler(req, res) {
 
     const mailOptions = {
       from: process.env.SMTP_USER || '"Contact Form" <noreply@example.com>',
-      to: "yashmakavana@gmail.com",
+      to: "enquiry@genxeltechnology.com",
       subject: `New Genxel Lead: Contact Form Submission from ${firstName}`,
       text: `
 Lead Source: GENXEL
