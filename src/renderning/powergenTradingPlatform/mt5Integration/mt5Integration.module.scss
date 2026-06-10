@@ -1,0 +1,166 @@
+@import '../../../scss/mixins/index.scss';
+
+.mt5IntegrationSection {
+    padding: 100px 0;
+    background-color: rgba(241, 242, 244, 0.7);
+    border-radius: 34px;
+
+    @include breakpoint('md-max') {
+        padding: 60px 0;
+        border-radius: 12px;
+    }
+
+    .twoColLayout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 70px;
+        align-items: center;
+
+        @include breakpoint('md-max') {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+    }
+
+    .leftCol {
+        .center {
+            display: flex;
+            padding: 0 0 16px 0;
+        }
+
+        h2 {
+            @include heading1;
+            color: var(--Foundation-Blue-Dark, #0B0B14);
+            margin: 0 0 20px 0;
+        }
+
+        p {
+            color: var(--foundation-white-dark-active, #737373);
+            font-size: 18px;
+            line-height: 30px;
+            margin-bottom: 32px;
+
+            @include breakpoint('sm-max') {
+                font-size: 15px;
+                line-height: 26px;
+            }
+        }
+
+        .benefitList {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+
+            .benefitItem {
+                display: flex;
+                align-items: center;
+                gap: 14px;
+                background: var(--Foundation-White-Normal, #FFF);
+                border: 1px solid #E6EDFF;
+                border-radius: 12px;
+                padding: 14px 18px;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    border-color: var(--foundation-blue-light-active, #B0B0FF);
+                    background: rgba(230, 230, 255, 0.40);
+                    transform: translateX(4px);
+                }
+
+                .dot {
+                    width: 8px;
+                    height: 8px;
+                    min-width: 8px;
+                    border-radius: 50%;
+                    background: linear-gradient(135deg, #8A2BE2, #3FA9F5);
+                }
+
+                span {
+                    color: var(--Foundation-Blue-Normal, #0F0F1A);
+                    font-size: 15px;
+                    font-weight: 500;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+
+    .rightCol {
+        .mt5Card {
+            background: var(--Foundation-White-Normal, #FFF);
+            border: 1px solid var(--foundation-blue-light-active, #B0C8FF);
+            border-radius: 24px;
+            padding: 48px 36px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 4px;
+                background: linear-gradient(90deg, #8A2BE2, #3FA9F5);
+                border-radius: 24px 24px 0 0;
+            }
+
+            .mt5Logo {
+                width: 80px;
+                height: 80px;
+                border-radius: 20px;
+                background: linear-gradient(135deg, #8A2BE2, #3FA9F5);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 24px;
+
+                svg {
+                    width: 40px;
+                    height: 40px;
+                    fill: #fff;
+                }
+            }
+
+            h3 {
+                font-size: 22px;
+                font-weight: 700;
+                color: var(--Foundation-Blue-Normal, #0F0F1A);
+                margin-bottom: 12px;
+            }
+
+            p {
+                color: var(--foundation-white-dark-active, #737373);
+                font-size: 15px;
+                line-height: 26px;
+            }
+
+            .divider {
+                width: 50px;
+                height: 3px;
+                background: linear-gradient(90deg, #8A2BE2, #3FA9F5);
+                border-radius: 2px;
+                margin: 20px auto;
+            }
+
+            .tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                justify-content: center;
+                margin-top: 20px;
+
+                .tag {
+                    background: var(--Foundation-Blue-Light, #E6EDFF);
+                    border: 1px solid #E6EDFF;
+                    border-radius: 20px;
+                    padding: 6px 16px;
+                    font-size: 13px;
+                    font-weight: 600;
+                    color: #5c1aac;
+                }
+            }
+        }
+    }
+}

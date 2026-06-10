@@ -31,6 +31,10 @@ const menuItems = [
         title: "Mobile App For CRM",
         redirectLink: "/mobile-app-for-crm",
       },
+      {
+        title: "PowerGen Trading Platform",
+        redirectLink: "/powergen-trading-platform",
+      },
     ],
   },
   {
@@ -81,7 +85,7 @@ const menuItems = [
       },
       {
         title: "Case Studies",
-        redirectLink: "/",
+        redirectLink: "/forex-crm-case-study",
       },
     ],
   },

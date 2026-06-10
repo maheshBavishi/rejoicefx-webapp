@@ -1,0 +1,167 @@
+@import '../../../scss/mixins/index.scss';
+
+.developmentProcessSection {
+    padding: 100px 0;
+    background-color: rgba(241, 242, 244, 0.7);
+    border-radius: 34px;
+
+    @include breakpoint('md-max') {
+        padding: 60px 0;
+        border-radius: 12px;
+    }
+
+    .sectionHeader {
+        text-align: center;
+        margin-bottom: 64px;
+
+        .center {
+            display: flex;
+            justify-content: center;
+            padding: 0 0 16px 0;
+        }
+
+        h2 {
+            @include heading1;
+            color: #0B0B14;
+            margin: 0 0 16px 0;
+        }
+
+        p {
+            color: var(--foundation-white-dark-active, #737373);
+            font-size: 18px;
+            line-height: 30px;
+            max-width: 580px;
+            margin: 0 auto;
+
+            @include breakpoint('sm-max') {
+                font-size: 15px;
+                line-height: 26px;
+            }
+        }
+    }
+
+    .stepsGrid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+
+        @include breakpoint('md-max') {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint('sm-max') {
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+    }
+
+    .stepCard {
+        border: 1px solid var(--foundation-blue-light-active, #B0C8FF);
+        background: var(--Foundation-White-Normal, #FFF);
+        border-radius: 22px;
+        padding: 36px 28px;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #8A2BE2, #3FA9F5);
+            border-radius: 22px 22px 0 0;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        &:hover {
+            background: rgba(230, 230, 255, 0.60);
+            border-color: var(--foundation-blue-light-active, #B0B0FF);
+            transform: translateY(-5px);
+            box-shadow: 0 16px 40px rgba(138, 43, 226, 0.1);
+
+            &::before {
+                transform: scaleX(1);
+            }
+
+            .stepIconWrap {
+                background: linear-gradient(135deg, #8A2BE2, #3FA9F5);
+
+                svg {
+                    fill: #fff;
+                }
+            }
+        }
+
+        .stepNumber {
+            font-size: 56px;
+            font-weight: 800;
+            line-height: 1;
+            position: absolute;
+            top: 18px;
+            right: 22px;
+            background: linear-gradient(135deg, #8A2BE2, #3FA9F5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            opacity: 0.15;
+        }
+
+        .stepIconWrap {
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            background: rgba(138, 43, 226, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+
+            svg {
+                width: 26px;
+                height: 26px;
+                fill: #8A2BE2;
+                transition: all 0.3s ease;
+            }
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--Foundation-Blue-Normal, #0F0F1A);
+            margin-bottom: 14px;
+            line-height: 26px;
+
+            @include breakpoint('sm-max') {
+                font-size: 16px;
+            }
+        }
+
+        .pointList {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .point {
+                display: flex;
+                align-items: flex-start;
+                gap: 10px;
+                color: var(--foundation-white-dark-active, #737373);
+                font-size: 14px;
+                line-height: 22px;
+
+                &::before {
+                    content: '→';
+                    color: #8A2BE2;
+                    flex-shrink: 0;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

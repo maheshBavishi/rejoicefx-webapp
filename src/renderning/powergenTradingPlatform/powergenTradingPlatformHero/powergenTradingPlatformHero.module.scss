@@ -1,0 +1,52 @@
+@import '../../../scss/mixins/index.scss';
+
+.forexCrmBanner {
+    background-image: url('/assets/images/banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    padding: 100px 0;
+    border-radius: 34px;
+
+    @include breakpoint("md-max") {
+        padding: 60px 0;
+        border-radius: 12px;
+    }
+
+
+    .centeralignment {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2 {
+        @include heading1;
+        margin: 20px auto;
+        text-align: center;
+        color: #0B0B14;
+        max-width: 900px;
+        text-align: center;
+    }
+
+    p {
+        color: var(--Foundation-White-Darker, #595959);
+        text-align: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        max-width: 80%;
+        margin: 0 auto;
+        line-height: 32px;
+
+        @include breakpoint("md-max") {
+            font-size: 16px;
+            line-height: 26px;
+        }
+
+        @include breakpoint("sm-max") {
+            @include font14;
+        }
+    }
+}

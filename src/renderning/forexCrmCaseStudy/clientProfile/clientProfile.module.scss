@@ -1,0 +1,156 @@
+@import '../../../scss/mixins/index.scss';
+
+.clientProfileSection {
+    padding: 80px 0;
+
+    @include breakpoint('md-max') {
+        padding: 60px 0;
+    }
+
+    .sectionHeader {
+        text-align: center;
+        margin-bottom: 56px;
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, rgba(138, 43, 226, 0.12), rgba(63, 169, 245, 0.12));
+            border: 1px solid rgba(138, 43, 226, 0.3);
+            border-radius: 40px;
+            padding: 8px 20px;
+            color: #8A2BE2;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+
+            span {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: linear-gradient(135deg, #8A2BE2, #3FA9F5);
+                display: inline-block;
+                animation: pulse 2s infinite;
+            }
+        }
+
+        h2 {
+            @include heading1;
+            color: #0B0B14;
+            margin-bottom: 16px;
+        }
+
+        p {
+            color: #595959;
+            font-size: 18px;
+            line-height: 30px;
+            max-width: 600px;
+            margin: 0 auto;
+
+            @include breakpoint('sm-max') {
+                font-size: 15px;
+                line-height: 26px;
+            }
+        }
+    }
+
+    .profileGrid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+
+        @include breakpoint('md-max') {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint('sm-max') {
+            grid-template-columns: 1fr;
+        }
+
+        .profileCard {
+            background: linear-gradient(135deg, #f8f5ff 0%, #f0f8ff 100%);
+            border: 1px solid rgba(138, 43, 226, 0.1);
+            border-radius: 20px;
+            padding: 32px 24px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 3px;
+                background: linear-gradient(90deg, #8A2BE2, #3FA9F5);
+                border-radius: 20px 20px 0 0;
+            }
+
+            &:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 16px 40px rgba(138, 43, 226, 0.12);
+                border-color: rgba(138, 43, 226, 0.25);
+            }
+
+            .cardIcon {
+                width: 52px;
+                height: 52px;
+                background: linear-gradient(135deg, #8A2BE2, #3FA9F5);
+                border-radius: 14px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 20px;
+
+                svg {
+                    width: 26px;
+                    height: 26px;
+                    fill: #fff;
+                }
+            }
+
+            .cardLabel {
+                font-size: 12px;
+                font-weight: 600;
+                color: #8A2BE2;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-bottom: 8px;
+                display: block;
+            }
+
+            h3 {
+                font-size: 20px;
+                font-weight: 700;
+                color: #0B0B14;
+                margin-bottom: 10px;
+                line-height: 28px;
+            }
+
+            .tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 6px;
+                margin-top: 12px;
+
+                .tag {
+                    background: rgba(138, 43, 226, 0.08);
+                    border: 1px solid rgba(138, 43, 226, 0.15);
+                    border-radius: 20px;
+                    padding: 4px 12px;
+                    font-size: 13px;
+                    font-weight: 500;
+                    color: #5c1aac;
+                }
+            }
+        }
+    }
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(1.2); }
+}

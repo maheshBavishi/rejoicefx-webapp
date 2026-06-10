@@ -1,0 +1,102 @@
+@import '../../../scss/mixins/index.scss';
+
+.benefitsSection {
+    padding: 100px 0;
+    background-color: rgba(241, 242, 244, 0.7);
+    border-radius: 34px;
+
+    @include breakpoint('md-max') {
+        padding: 60px 0;
+        border-radius: 12px;
+    }
+
+    .twoColLayout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 70px;
+        align-items: center;
+
+        @include breakpoint('md-max') {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+    }
+
+    .leftCol {
+        .center {
+            display: flex;
+            padding: 0 0 16px 0;
+        }
+
+        h2 {
+            @include heading1;
+            color: var(--Foundation-Blue-Dark, #0B0B14);
+            margin: 0 0 20px 0;
+        }
+
+        p {
+            color: var(--foundation-white-dark-active, #737373);
+            font-size: 17px;
+            line-height: 30px;
+
+            @include breakpoint('sm-max') {
+                font-size: 15px;
+                line-height: 26px;
+            }
+        }
+    }
+
+    .rightCol {
+        .benefitList {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .benefitItem {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            background: var(--Foundation-White-Normal, #FFF);
+            border: 1px solid #E6EDFF;
+            border-radius: 14px;
+            padding: 18px 20px;
+            transition: all 0.3s ease;
+
+            &:hover {
+                border-color: var(--foundation-blue-light-active, #B0B0FF);
+                background: rgba(230, 230, 255, 0.40);
+                transform: translateX(4px);
+            }
+
+            .checkIcon {
+                width: 34px;
+                height: 34px;
+                min-width: 34px;
+                border-radius: 50%;
+                background: linear-gradient(135deg, #8A2BE2, #3FA9F5);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 2px;
+
+                svg {
+                    width: 16px;
+                    height: 16px;
+                    fill: #fff;
+                }
+            }
+
+            span {
+                color: var(--Foundation-Blue-Normal, #0F0F1A);
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 26px;
+
+                @include breakpoint('sm-max') {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

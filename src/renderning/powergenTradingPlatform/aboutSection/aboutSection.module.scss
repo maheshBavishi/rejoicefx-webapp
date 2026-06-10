@@ -1,0 +1,108 @@
+@import '../../../scss/mixins/index.scss';
+
+.aboutSection {
+    padding: 100px 0;
+
+    @include breakpoint('md-max') {
+        padding: 60px 0;
+    }
+
+    .twoColLayout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+
+        @include breakpoint('md-max') {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+    }
+
+    .leftCol {
+        .center {
+            display: flex;
+            padding: 0 0 16px 0;
+        }
+
+        h2 {
+            @include heading1;
+            color: var(--Foundation-Blue-Dark, #0B0B14);
+            margin: 0 0 24px 0;
+        }
+
+        p {
+            color: var(--foundation-white-dark-active, #737373);
+            font-size: 18px;
+            line-height: 30px;
+
+            @include breakpoint('sm-max') {
+                font-size: 15px;
+                line-height: 26px;
+            }
+        }
+    }
+
+    .rightCol {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+
+        @include breakpoint('sm-max') {
+            grid-template-columns: 1fr;
+        }
+
+        .statCard {
+            background: var(--Foundation-Blue-Light, #E6EDFF);
+            border: 1px solid #E6EDFF;
+            border-radius: 20px;
+            padding: 28px 22px;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 3px;
+                background: linear-gradient(90deg, #8A2BE2, #3FA9F5);
+                border-radius: 20px 20px 0 0;
+            }
+
+            &:hover {
+                border-color: var(--foundation-blue-light-active, #B0B0FF);
+                background: rgba(230, 230, 255, 0.60);
+                transform: translateY(-4px);
+                box-shadow: 0 12px 30px rgba(138, 43, 226, 0.1);
+            }
+
+            .iconWrap {
+                width: 44px;
+                height: 44px;
+                border-radius: 12px;
+                background: rgba(138, 43, 226, 0.1);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 14px;
+                transition: all 0.3s ease;
+
+                svg {
+                    width: 22px;
+                    height: 22px;
+                    fill: #8A2BE2;
+                }
+            }
+
+            p {
+                font-size: 20px;
+                font-weight: 700;
+                color: var(--Foundation-Blue-Normal, #0F0F1A);
+                line-height: 22px;
+            }
+        }
+    }
+}

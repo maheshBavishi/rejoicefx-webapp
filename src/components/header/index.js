@@ -44,6 +44,11 @@ const menuItems = [
         description: "Build Powerful Forex & Trading Mobile Apps for Modern Brokers.",
         redirectLink: "/mobile-app-for-crm",
       },
+      {
+        title: "PowerGen Trading Platform",
+        description: "Launch a powerful, fully branded web trading platform designed for forex brokers, prop firms, and financial businesses.",
+        redirectLink: "/powergen-trading-platform",
+      },
     ],
   },
   {
@@ -113,7 +118,7 @@ const menuItems = [
       {
         title: "Case Studies",
         description: "Real-world success stories and business outcomes powered by GENXEL.",
-        redirectLink: "/",
+        redirectLink: "/forex-crm-case-study",
       },
     ],
   },

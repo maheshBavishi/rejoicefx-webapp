@@ -1,0 +1,172 @@
+@import '../../../scss/mixins/index.scss';
+
+.challengeSection {
+    padding: 80px 0;
+
+    @include breakpoint('md-max') {
+        padding: 60px 0;
+    }
+
+    .innerWrap {
+        border-radius: 34px;
+        padding: 80px;
+        background: #F6F6F8;
+        border: 1px solid #E6EDFF;
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -80px;
+            right: -80px;
+            width: 340px;
+            height: 340px;
+            background: radial-gradient(circle, rgba(176, 176, 255, 0.2) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -60px;
+            left: -60px;
+            width: 260px;
+            height: 260px;
+            background: radial-gradient(circle, rgba(174, 235, 255, 0.25) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        @include breakpoint('md-max') {
+            padding: 50px 30px;
+            border-radius: 20px;
+        }
+
+        @include breakpoint('sm-max') {
+            padding: 36px 20px;
+            border-radius: 12px;
+        }
+    }
+
+    .twoColLayout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 64px;
+        align-items: start;
+        position: relative;
+        z-index: 1;
+
+        @include breakpoint('md-max') {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+    }
+
+    .leftCol {
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(230, 230, 255, 0.60);
+            border: 1px solid var(--foundation-blue-light-active, #B0B0FF);
+            border-radius: 40px;
+            padding: 8px 20px;
+            color: #5c35cc;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 28px;
+
+            span {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: linear-gradient(135deg, #8A2BE2, #3FA9F5);
+                display: inline-block;
+            }
+        }
+
+        h2 {
+            @include heading1;
+            color: var(--Foundation-Blue-Dark, #0B0B14);
+            margin-bottom: 24px;
+            max-width: 480px;
+        }
+
+        p {
+            color: var(--foundation-white-dark-active, #737373);
+            font-size: 17px;
+            line-height: 30px;
+
+            @include breakpoint('sm-max') {
+                font-size: 15px;
+                line-height: 26px;
+            }
+        }
+
+        .divider {
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #8A2BE2, #3FA9F5);
+            border-radius: 2px;
+            margin: 28px 0;
+        }
+    }
+
+    .rightCol {
+        .challengeList {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .challengeItem {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            background: var(--Foundation-Blue-Light, #E6EDFF);
+            border: 1px solid #E6EDFF;
+            border-radius: 14px;
+            padding: 18px 20px;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background: rgba(230, 230, 255, 0.60);
+                border-color: var(--foundation-blue-light-active, #B0B0FF);
+                transform: translateX(4px);
+            }
+
+            .challengeIcon {
+                width: 36px;
+                height: 36px;
+                min-width: 36px;
+                background: rgba(138, 43, 226, 0.1);
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                svg {
+                    width: 18px;
+                    height: 18px;
+                    fill: #8A2BE2;
+                }
+            }
+
+            p {
+                color: var(--Foundation-Blue-Normal, #0F0F1A);
+                font-size: 16px;
+                line-height: 26px;
+                margin: 0;
+                padding-top: 4px;
+                font-weight: 500;
+
+                @include breakpoint('sm-max') {
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
