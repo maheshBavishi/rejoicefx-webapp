@@ -3,7 +3,7 @@
 .advantages {
     background-color: rgba(241, 242, 244, .7);
     border-radius: 34px;
-    padding: 120px 0;
+    padding: 100px 0;
 
     @include breakpoint("md-max") {
         padding: 60px 0;

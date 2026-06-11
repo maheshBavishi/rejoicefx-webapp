@@ -3,7 +3,7 @@
 .workProcess {
     background-color: #8A2BE2;
     border-radius: 34px;
-    padding: 120px 0;
+    padding: 100px 0;
 
     @include breakpoint("md-max") {
         padding: 60px 0;
@@ -22,7 +22,7 @@
             border-radius: 40px;
             border: 1px solid var(--foundation-blue-light-active, #b0b0ff);
             background: rgba(176, 200, 255, .2);
-            font-size: 14px;
+            font-size: 15px;
             font-style: normal;
             font-weight: 600;
             line-height: normal;

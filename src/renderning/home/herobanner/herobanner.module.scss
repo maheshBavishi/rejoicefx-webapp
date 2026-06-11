@@ -94,7 +94,7 @@
             line-height: 32px;
 
             @include breakpoint("sm-max") {
-                font-size: 14px;
+                font-size: 15px;
                 line-height: 26px;
                 min-height: 130px;
             }
@@ -134,7 +134,7 @@
             border: 1px solid #B0B0FF;
             background: rgba(230, 230, 255, 0.80);
             color: var(--Foundation-Blue-Dark, #0B0B14);
-            font-size: 14px;
+            font-size: 15px;
             font-style: normal;
             font-weight: 600;
             line-height: normal;

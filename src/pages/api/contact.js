@@ -54,7 +54,7 @@ ${message}
             .label { font-size: 12px; color: #888888; text-transform: uppercase; font-weight: 700; margin-bottom: 6px; display: block; letter-spacing: 0.5px; }
             .value { font-size: 16px; color: #1a1a1a; font-weight: 500; }
             .services-list { margin-top: 8px; }
-            .service-pill { background-color: #f4f0ff; color: #8A2BE2; padding: 8px 14px; border-radius: 20px; font-size: 14px; font-weight: 600; display: inline-block; border: 1px solid #e9dfff; margin-right: 6px; margin-bottom: 6px; }
+            .service-pill { background-color: #f4f0ff; color: #8A2BE2; padding: 8px 14px; border-radius: 20px; font-size: 15px; font-weight: 600; display: inline-block; border: 1px solid #e9dfff; margin-right: 6px; margin-bottom: 6px; }
             .message-box { background-color: #f9f9f9; border-left: 4px solid #8A2BE2; padding: 18px; font-style: italic; color: #444; line-height: 1.6; border-radius: 0 6px 6px 0; margin-top: 8px; font-size: 15px; }
             .footer { background-color: #f9fafb; padding: 20px; text-align: center; font-size: 13px; color: #999999; border-top: 1px solid #eaeaea; }
           </style>

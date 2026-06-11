@@ -93,7 +93,7 @@
             font-style: italic;
 
             @include breakpoint('sm-max') {
-                font-size: 14px;
+                font-size: 15px;
                 line-height: 26px;
             }
         }

@@ -1,10 +1,12 @@
 @import '../../../scss/mixins/index.scss';
 
 .requirementsSection {
-    padding: 120px 0;
+    padding: 100px 0;
+
     @include breakpoint("md-max") {
         padding: 60px 0;
     }
+
     .btnCenter {
         display: flex;
         padding: 0 0 16px 0;
@@ -70,7 +72,7 @@
                             display: grid;
                             grid-template-columns: 24px 1fr;
                             gap: 14px;
-                            padding: 0 0 24px 0 ;
+                            padding: 0 0 24px 0;
 
                             span {
                                 display: block;
@@ -127,11 +129,14 @@
             position: relative;
             border-radius: 24px;
             height: 600px;
+
             @include breakpoint("sm-max") {
                 height: 320px;
             }
+
             img {
                 border-radius: 24px;
+
                 @include breakpoint("sm-max") {
                     border-radius: 12px;
                 }

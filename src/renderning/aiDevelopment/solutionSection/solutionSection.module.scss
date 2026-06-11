@@ -3,7 +3,7 @@
 .solutionSection {
     border-radius: 34px;
     background: linear-gradient(137.56deg, #8A2BE2 0%, #3FA9F5 47.95%, #AEEBFF 95.91%);
-    padding: 120px 0;
+    padding: 100px 0;
 
     @include breakpoint("md-max") {
         padding: 60px 0;
@@ -24,7 +24,7 @@
             border-radius: 40px;
             border: 1px solid var(--foundation-blue-light-active, #B0B0FF);
             background: rgba(176, 200, 255, 0.20);
-            font-size: 14px;
+            font-size: 15px;
             font-style: normal;
             font-weight: 600;
             line-height: normal;

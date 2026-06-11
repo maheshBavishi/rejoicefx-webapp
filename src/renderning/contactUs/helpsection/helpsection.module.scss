@@ -1,7 +1,7 @@
 @import '../../../scss/mixins/index.scss';
 
 .helpsectionAlignment {
-    padding: 120px 0;
+    padding: 100px 0;
 
     @include breakpoint("md-max") {
         padding: 60px 0;
@@ -93,7 +93,7 @@
                         a {
                             display: block;
                             color: rgba(255, 255, 255, 0.9);
-                            font-size: 14px;
+                            font-size: 15px;
                             line-height: 1.5;
                         }
                     }
@@ -159,6 +159,7 @@
 
             .servicesSection {
                 grid-column: span 2;
+
                 @include breakpoint("sm-max") {
                     grid-column: auto;
                 }
@@ -178,25 +179,25 @@
                     display: flex;
                     flex-wrap: wrap;
                     gap: 12px;
-                    
+
                     .servicePill {
                         padding: 10px 20px;
                         border-radius: 30px;
                         border: 1px solid var(--foundation-white-normal-active, #CCC);
                         color: var(--foundation-white-dark-active, #0B0B14);
                         font-family: "DM Sans", sans-serif;
-                        font-size: 14px;
+                        font-size: 15px;
                         font-style: normal;
                         font-weight: 500;
                         cursor: pointer;
                         transition: .3s ease-in-out;
                         user-select: none;
-                        
+
                         &:hover {
                             border-color: #8A2BE2;
                             color: #8A2BE2;
                         }
-                        
+
                         &.active {
                             background: #8A2BE2;
                             border-color: #8A2BE2;

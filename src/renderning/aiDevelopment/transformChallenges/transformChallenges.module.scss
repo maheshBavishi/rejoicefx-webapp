@@ -21,7 +21,7 @@
             background: rgba(138, 43, 226, 0.05);
             color: #8A2BE2;
             border-radius: 999px;
-            font-size: 14px;
+            font-size: 15px;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -63,14 +63,22 @@
                 margin-bottom: 30px;
                 padding-left: 20px;
 
-                .dotRed, .dotGreen {
+                .dotRed,
+                .dotGreen {
                     width: 12px;
                     height: 12px;
                     border-radius: 50%;
                 }
 
-                .dotRed { background: #FF4D4D; box-shadow: 0 0 10px rgba(255, 77, 77, 0.5); }
-                .dotGreen { background: #00C853; box-shadow: 0 0 10px rgba(0, 200, 83, 0.5); }
+                .dotRed {
+                    background: #FF4D4D;
+                    box-shadow: 0 0 10px rgba(255, 77, 77, 0.5);
+                }
+
+                .dotGreen {
+                    background: #00C853;
+                    box-shadow: 0 0 10px rgba(0, 200, 83, 0.5);
+                }
 
                 h4 {
                     font-size: 22px;
@@ -105,7 +113,8 @@
             }
         }
 
-        .challengeCard, .outcomeCard {
+        .challengeCard,
+        .outcomeCard {
             background: #ffffff;
             border: 1px solid #f0f0f0;
             padding: 24px;
@@ -137,7 +146,7 @@
                 }
 
                 p {
-                    font-size: 14px;
+                    font-size: 15px;
                     line-height: 1.5;
                     color: #595959;
                     margin: 0;
@@ -147,11 +156,13 @@
 
         .challengeCard {
             border-left: 4px solid #FF4D4D;
+
             &:hover {
                 transform: translateX(5px);
                 border-color: #FF4D4D;
                 box-shadow: 0 10px 20px rgba(255, 77, 77, 0.05);
             }
+
             .cardIndicator {
                 background: rgba(255, 77, 77, 0.1);
                 color: #FF4D4D;
@@ -160,11 +171,13 @@
 
         .outcomeCard {
             border-left: 4px solid #00C853;
+
             &:hover {
                 transform: translateX(-5px);
                 border-color: #00C853;
                 box-shadow: 0 10px 20px rgba(0, 200, 83, 0.05);
             }
+
             .cardIndicator {
                 background: rgba(0, 200, 83, 0.1);
                 color: #00C853;

@@ -3,14 +3,17 @@
 .solutionsForDevice {
     background-color: rgba(241, 242, 244, .7);
     border-radius: 34px;
-    padding: 120px 0;
+    padding: 100px 0;
+
     @include breakpoint("md-max") {
         padding: 60px 0;
     }
+
     @include breakpoint("sm-max") {
         padding: 60px 0;
         border-radius: 12px;
     }
+
     .centerAlignment {
         display: flex;
         align-items: center;
@@ -34,11 +37,11 @@
         gap: 30px;
 
         @include breakpoint("md-max") {
-            grid-template-columns: repeat(2 , 1fr);
+            grid-template-columns: repeat(2, 1fr);
         }
 
         @include breakpoint("sm-max") {
-            grid-template-columns: repeat(1 , 1fr);
+            grid-template-columns: repeat(1, 1fr);
             gap: 20px;
         }
 
@@ -60,7 +63,7 @@
                 padding: 4px 10px;
                 width: fit-content;
                 color: var(--Foundation-Blue-Normal, #0F0F1A);
-                font-size: 14px;
+                font-size: 15px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
@@ -100,12 +103,13 @@
                 @include breakpoint("sm-max") {
                     height: 210px;
                 }
-                img {
-                border-radius: 20px;
 
-                @include breakpoint("sm-max") {
-                    border-radius: 12px;
-                }
+                img {
+                    border-radius: 20px;
+
+                    @include breakpoint("sm-max") {
+                        border-radius: 12px;
+                    }
                 }
             }
         }
