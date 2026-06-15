@@ -33,6 +33,18 @@ const productsData = [
         redirectLink: "/mam-pamm-social-trading",
         imgSrc: Image4,
     },
+    {
+        title: "Mobile App For CRM",
+        description: "Build Powerful Forex & Trading Mobile Apps for Modern Brokers.",
+        redirectLink: "/mobile-app-for-crm",
+        imgSrc: Image4,
+    },
+    {
+        title: "PowerGen Trading Platform",
+        description: "Powerful web trading platform built for forex brokers and financial businesses.",
+        redirectLink: "/powergen-trading-platform",
+        imgSrc: Image2,
+    },
 ];
 
 export default function Product() {

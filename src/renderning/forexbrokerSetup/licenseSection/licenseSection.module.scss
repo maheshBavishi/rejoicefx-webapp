@@ -49,21 +49,23 @@
 
     .card {
         border-radius: 14px;
-        border: 1.2px solid var(--foundation-white-normal-hover, #e6e6e6);
         background: #ffffff;
         padding: 30px;
         transition: 0.3s ease-in-out;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        border: 1px solid  #b0c8ff;
+        background: hsla(0, 0%, 90%, 0.2);
 
         @include breakpoint("sm-max") {
             padding: 24px;
         }
 
         &:hover {
-            border: 1.2px solid #8A2BE2;
             box-shadow: 0 6px 24px rgba(1, 78, 255, 0.1);
+            border: 1px solid #8A2BE2;
+
         }
 
         &:hover .solution svg {

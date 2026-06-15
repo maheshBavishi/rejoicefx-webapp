@@ -11,7 +11,7 @@ export default function ForexbrokerSetup() {
     return (
         <div>
             <ForexbrokerSetupBanner />
-            <Slidersection />
+            {/* <Slidersection /> */}
             <LicenseSection />
             <StepContent />
             <WhatWeOffer />

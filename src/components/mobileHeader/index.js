@@ -64,6 +64,11 @@ const menuItems = [
         title: "AI bot development",
         redirectLink: "/algo-bot",
       },
+      {
+        title: "PSP & Payment Gateway Partners",
+        redirectLink: "/psp-partners",
+      },
+
 
     ],
   },

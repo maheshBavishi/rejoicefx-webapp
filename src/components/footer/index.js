@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import styles from './footer.module.scss';
 import Footerbanner from './footerbanner';
 import Image from 'next/image';
-import Button from '../button';
-import RightBlackLg from '../icons/rightBlackLg';
 import Link from 'next/link';
 import toast from 'react-hot-toast';
 import axios from 'axios';
@@ -107,15 +105,16 @@ export default function Footer() {
                   <Link href="/copy-trading-platform">Copy Trading</Link>
                   <Link href="/mam-pamm-social-trading">MAM/PAMM Social Trading</Link>
                   <Link href="/mobile-app-for-crm">Mobile App For CRM</Link>
+                  <Link href="/powergen-trading-platform">PowerGen Trading Platform</Link>
                 </div>
                 <div>
                   <div className={styles.subtitle}>
                     <h3>Services</h3>
                   </div>
-                  <Link href="/">Forex Broker Setup</Link>
-                  <Link href="/">MT4/MT5 Setup & Training</Link>
-                  <Link href="/">RMS</Link>
-                  <Link href="/">Liquidity Provider's Setup</Link>
+                  <Link href="/forex-broker-setup">Forex Broker Setup</Link>
+                  <Link href="/mt4-mt5-setup-training">MT4/MT5 Setup & Training</Link>
+                  <Link href="/rms-risk-management">RMS</Link>
+                  <Link href="/liquidity-provider-setup">Liquidity Provider's Setup</Link>
                   <Link href="/ai-development">AI/ML Services</Link>
                   <Link href="/algo-bot">AI bot development</Link>
                   <Link href="/psp-partners">PSP & Payment Gateway Partners</Link>
@@ -126,7 +125,7 @@ export default function Footer() {
                   </div>
                   <Link href="/about-us">About Us</Link>
                   <Link href="/news">News</Link>
-                  <Link href="/">Case Studies</Link>
+                  <Link href="/forex-crm-case-study">Case Studies</Link>
                 </div>
               </div>
             </div>
@@ -140,3 +139,4 @@ export default function Footer() {
     </div>
   )
 }
+

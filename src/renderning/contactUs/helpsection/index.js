@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useRouter } from 'next/router';
 import styles from './helpsection.module.scss';
 import Button from '@/components/button';
 import RightLgArrow from '@/components/icons/rightLgArrow';
@@ -18,7 +19,8 @@ const servicesList = [
 ];
 
 export default function Helpsection() {
-    const [contactData, setContactData] = useState({ country: "Afghanistan", services: [] });
+    const router = useRouter();
+    const [contactData, setContactData] = useState({ country: "India", services: [] });
     const [error, setError] = useState({});
     const [isLoading, setIsLoading] = useState(false);
     const disposableDomains = ["soebing", "yopmail", "sharklasers", "guerrillamail", "getairmail", "grr", "guerrillamailblock", "pokemail", "spam4", "cazlq", "sloveniakm", "mybx", "memsg", "matra", "maildrop"];
@@ -89,7 +91,6 @@ export default function Helpsection() {
                     await axios.post('/api/contact', contactData);
 
                     setIsLoading(false)
-                    toast.success("Thank you for contacting us. We will get back to you soon.");
                     setContactData({
                         firstName: "",
                         email: "",
@@ -98,6 +99,7 @@ export default function Helpsection() {
                         message: "",
                         services: [],
                     });
+                    router.push('/thank-you');
                 } catch (err) {
                     toast.error("Something went wrong");
                     setIsLoading(false)
@@ -257,7 +259,7 @@ export default function Helpsection() {
                                     <option value="Honduras">Honduras</option>
                                     <option value="Hungary">Hungary</option>
                                     <option value="Iceland">Iceland</option>
-                                    <option value="India">India</option>
+                                    <option value="India" selected>India</option>
                                     <option value="Indonesia">Indonesia</option>
                                     <option value="Iran">Iran</option>
                                     <option value="Iraq">Iraq</option>

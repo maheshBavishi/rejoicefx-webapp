@@ -43,10 +43,10 @@ const testimonials = [
     },
     {
         text: "We significantly improved our client management and internal workflows after implementing GENXEL. Their CRM and automation tools brought structure and efficiency to our operations.",
-        author: "Operations Team, Neuvera"
+        author: "Operations Team, Newera365"
     },
     {
-        
+
         text: "Before GENXEL, managing multiple systems was a challenge. Now everything is centralized, making it easier for our team to operate and scale without technical bottlenecks.",
         author: "Management Team, IncredFX"
     },

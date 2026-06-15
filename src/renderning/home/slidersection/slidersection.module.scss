@@ -3,11 +3,19 @@
 .slidersection {
     padding: 100px 0 0 0;
 
+    @include breakpoint("sm-max") {
+        padding: 60px 0 0 0;
+    }
+
     h2 {
         color: #0B0B14;
         @include heading1;
         text-align: center;
         margin: 0 0 60px 0;
+
+        @include breakpoint("sm-max") {
+            margin: 0 0 40px 0;
+        }
     }
 
     .sliderwrapper {

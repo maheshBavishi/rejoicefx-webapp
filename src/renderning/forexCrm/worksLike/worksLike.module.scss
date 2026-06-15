@@ -2,9 +2,11 @@
 
 .worksLikeAlignment {
     padding: 120px 0 0 0;
+
     @include breakpoint("md-max") {
         padding: 60px 0 0 0;
     }
+
     .centeralignment {
         display: flex;
         justify-content: center;
@@ -21,7 +23,7 @@
     .allbox {
         .grayBox:nth-child(2n+2) {
             .grid {
-                grid-template-columns: 400px 1fr ;  
+                grid-template-columns: 400px 1fr;
 
                 @include breakpoint("md-max") {
                     grid-template-columns: 1fr;
@@ -30,6 +32,7 @@
 
                 .griditems:nth-child(1) {
                     order: 2;
+
                     @include breakpoint("md-max") {
                         order: inherit;
                     }
@@ -37,11 +40,13 @@
             }
         }
     }
+
     .grayBox {
         border-radius: 34px;
         background: #F6F6F8;
         padding: 60px;
         margin: 0 0 100px 0;
+
         @include breakpoint("sm-max") {
             border-radius: 12px;
             margin: 0 0 60px 0;
@@ -50,11 +55,12 @@
         @include breakpoint("sm-max") {
             padding: 40px 20px;
         }
+
         .grid {
             display: grid;
             grid-template-columns: 1fr 400px;
             gap: 60px;
-            
+
             @include breakpoint("md-max") {
                 grid-template-columns: 1fr;
                 gap: 40px;
@@ -62,7 +68,7 @@
 
             .img {
                 img {
-                    width: 100%;    
+                    width: 100%;
                 }
             }
 
@@ -85,6 +91,7 @@
                         font-weight: 700;
                         margin: 0 0 10px 0;
                         line-height: 30px;
+
                         @include breakpoint("sm-max") {
                             @include font14;
                         }
@@ -119,6 +126,7 @@
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
+
                     @include breakpoint("sm-max") {
                         @include font14;
                     }
@@ -141,7 +149,7 @@
                 span {
                     display: block;
                     color: var(--Foundation-Blue-Normal, #0F0F1A);
-                    font-size: 24px;
+                    font-size: 25px;
                     font-style: normal;
                     font-weight: 700;
                     line-height: normal;

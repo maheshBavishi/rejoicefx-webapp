@@ -46,7 +46,7 @@ const menuItems = [
       },
       {
         title: "PowerGen Trading Platform",
-        description: "Launch a powerful, fully branded web trading platform designed for forex brokers, prop firms, and financial businesses.",
+        description: "Fully branded trading platform for forex brokers, prop firms, and financial businesses.",
         redirectLink: "/powergen-trading-platform",
       },
     ],

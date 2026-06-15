@@ -6,20 +6,20 @@ const testimonials = [
     {
         text: '"Genxel Technology transformed our brokerage operations completely. Before implementing the CRM, managing clients, partners, and compliance processes required multiple systems and significant manual effort. Today, everything operates from a single platform. Our onboarding speed has improved dramatically, and our IB network has grown faster than expected."',
         name: 'CEO',
-        role: 'Global Forex Brokerage',
-        initials: 'CE',
+        role: 'Newera365',
+        initials: 'Ne',
     },
     {
         text: '"The Trader Room and Mobile App developed by Genxel Technology significantly improved our client experience. Deposits, withdrawals, account creation, and support requests are now seamless. The platform has become one of our biggest competitive advantages."',
         name: 'Operations Director',
-        role: 'Global Forex Brokerage',
-        initials: 'OD',
+        role: 'Foreaxa',
+        initials: 'Fx',
     },
     {
         text: '"What impressed us most was their understanding of the forex industry. They didn\'t just build software—they delivered a complete brokerage management solution that scaled with our business."',
         name: 'Head of Business Development',
-        role: 'Global Forex Brokerage',
-        initials: 'HB',
+        role: 'IncredFx',
+        initials: 'IF',
     },
 ];
 
