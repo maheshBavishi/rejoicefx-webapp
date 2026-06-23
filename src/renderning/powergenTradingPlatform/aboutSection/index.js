@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './aboutSection.module.scss';
 import CommonButton from '@/components/commonButton';
+const PowerGen = '/assets/images/power-gen.png';
 
 const highlights = [
     {
@@ -28,21 +29,26 @@ export default function AboutSection() {
                 <div className="container">
                     <div className={styles.twoColLayout}>
                         <div className={styles.leftCol}>
-                            <div className={styles.center}>
+                            <div className={styles.badgeWrapper}>
                                 <CommonButton text="About PowerGen" />
                             </div>
                             <h2>Modern Trading Infrastructure Built for Brokers</h2>
                             <p>
                                 At Genxel Technology, we develop enterprise-grade trading platforms that help brokers deliver professional trading experiences to their clients. PowerGen Trading Platform is designed to provide fast execution, advanced trading tools, real-time market data, and fully branded trading environments.
                             </p>
+                            <div className={styles.highlightsGrid}>
+                                {highlights.map((item, idx) => (
+                                    <div className={styles.highlightCard} key={idx}>
+                                        <div className={styles.iconWrap}>{item.icon}</div>
+                                        <span className={styles.label}>{item.label}</span>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                         <div className={styles.rightCol}>
-                            {highlights.map((item, idx) => (
-                                <div className={styles.statCard} key={idx}>
-                                    <div className={styles.iconWrap}>{item.icon}</div>
-                                    <p>{item.label}</p>
-                                </div>
-                            ))}
+                            <div className={styles.imageWrap}>
+                                <img src={PowerGen} alt='PowerGen' />
+                            </div>
                         </div>
                     </div>
                 </div>
