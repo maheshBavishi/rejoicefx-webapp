@@ -48,16 +48,16 @@ export default function ClientProfile() {
                         variants={containerVariants}
                     >
                         <motion.div variants={textVariants} className={styles.logoText}>
-                            POWERGEN
-                            <div className={styles.logoSub}>TRADING PLATFORM</div>
+                            FOREA<span className={styles.logoBlue}>X</span>A
+                            <div className={styles.logoSub}>CRM ECOSYSTEM</div>
                         </motion.div>
 
                         <motion.h2 variants={textVariants} className={styles.heading}>
-                            ADVANCED MULTI-ASSET TRADING PLATFORM FOR MODERN BROKERS
+                            Building a Complete Forex CRM Ecosystem
                         </motion.h2>
 
                         <motion.p variants={textVariants} className={styles.description}>
-                            A next-generation web terminal with ultra-fast execution, advanced charting, real-time market data and complete broker control – built to scale your brokerage globally.
+                            Empowering a Global Forex Brokerage with Smart Automation, Seamless Trading Experience & Scalable Growth
                         </motion.p>
 
                         <motion.div variants={textVariants} className={styles.buttonGroup}>
@@ -89,7 +89,7 @@ export default function ClientProfile() {
                         variants={imageVariants}
                     >
                         <div className={styles.imageWrap}>
-                            <img src={ClientProfileImage} alt="PowerGen Client Profile" />
+                            <img src={ClientProfileImage} alt="Foreaxa Client Profile" />
                         </div>
                     </motion.div>
                 </div>
