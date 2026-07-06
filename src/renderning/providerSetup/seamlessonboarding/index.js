@@ -41,7 +41,7 @@ export default function Seamlessonboarding() {
                         </h2>
                         <div className={styles.descriptionGroup}>
                             <p className={styles.description}>
-                                At RejoiceFX, we simplify one of the most critical parts of your brokerage — liquidity integration. From selecting the right liquidity provider to full technical setup, we handle everything so you can focus on scaling your trading business.
+                                At GENXEL, we simplify one of the most critical parts of your brokerage — liquidity integration. From selecting the right liquidity provider to full technical setup, we handle everything so you can focus on scaling your trading business.
                             </p>
                             <p className={styles.description}>
                                 Liquidity is the backbone of any successful brokerage. It impacts execution speed, spreads, and client satisfaction. Our mission is to deliver fast, stable, and competitive trading conditions for your clients.

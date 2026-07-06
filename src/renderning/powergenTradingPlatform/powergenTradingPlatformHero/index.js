@@ -7,7 +7,7 @@ export default function PowergenTradingPlatformHero() {
             <div className="container-lg">
                 <div className={styles.forexCrmBanner}>
                     <div className={styles.centeralignment}>
-                        <CommonButton text="PowerGen Trading Platform (Web Terminal)" />
+                        <CommonButton text="PowerGen Trading Platform" />
                     </div>
                     <h2>
                         Advanced Multi-Asset Trading Platform for Modern Brokers

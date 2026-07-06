@@ -5,7 +5,7 @@ export default function News() {
   return (
     <>
       <Head>
-        <title>News & Economic Calendar | RejoiceFX</title>
+        <title>News & Economic Calendar | GENXEL</title>
         <meta name="description" content="Stay ahead of the markets with real-time insights into the events that move prices." />
       </Head>
       <NewsPage />

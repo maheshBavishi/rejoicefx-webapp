@@ -54,7 +54,7 @@ export default function WorkProcess() {
                         </div>
                         <div className={styles.gridiitems}>
                             <div className={styles.center}>
-                                <div className={styles.counter}>03</div>
+                                <div className={styles.counter}>04</div>
                             </div>
                             <h3>
                                 Deployment & Support
